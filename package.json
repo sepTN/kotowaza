@@ -1,6 +1,6 @@
 {
     "name": "kotowaza",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Structured JSON dataset of Japanese proverbs (kotowaza) with meanings in Indonesian & English, example sentences, JLPT levels, and tags.",
     "homepage": "https://jepang.org/peribahasa/",
     "funding": {

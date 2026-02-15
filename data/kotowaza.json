@@ -1,0 +1,366 @@
+[
+    {
+        "id": "nanakorobi-yaoki",
+        "japanese": "七転び八起き",
+        "reading": "ななころびやおき",
+        "romaji": "Nanakorobi Yaoki",
+        "literal": "Fall seven times, rise eight times",
+        "meaning": {
+            "id": "Betapapun banyaknya kegagalan yang dialami, jangan pernah menyerah dan teruslah bangkit kembali.",
+            "en": "No matter how many times you fail, never give up and keep getting back up."
+        },
+        "tags": [
+            "motivation",
+            "numbers",
+            "life"
+        ],
+        "tags_id": [
+            "motivasi",
+            "angka",
+            "kehidupan"
+        ],
+        "jlpt": "N4",
+        "equivalent": {
+            "id": "Jatuh tujuh kali, bangkit delapan kali.",
+            "en": "If at first you don't succeed, try, try again."
+        },
+        "examples": [
+            {
+                "ja": "「七転び八起き」の精神で、最後まで諦めずに頑張ろう。",
+                "romaji": "\"Nanakorobi yaoki\" no seishin de, saigo made akiramezu ni ganbarou.",
+                "id": "Dengan semangat \"jatuh tujuh kali bangkit delapan kali\", mari berjuang sampai akhir tanpa menyerah."
+            },
+            {
+                "ja": "人生は「七転び八起き」だ。失敗を恐れずに挑戦しよう。",
+                "romaji": "Jinsei wa \"nanakorobi yaoki\" da. Shippai o osorezu ni chousen shiyou.",
+                "id": "Hidup itu \"jatuh tujuh kali bangkit delapan kali\". Mari mencoba tantangan tanpa takut gagal."
+            }
+        ],
+        "related": [
+            "kendo-chourai",
+            "futou-fukutsu"
+        ]
+    },
+    {
+        "id": "ichigo-ichie",
+        "japanese": "一期一会",
+        "reading": "いちごいちえ",
+        "romaji": "Ichigo Ichie",
+        "literal": "One time, one meeting",
+        "meaning": {
+            "id": "Setiap pertemuan adalah pertemuan yang unik dan tidak akan pernah terjadi lagi, sehingga harus dihargai sepenuhnya.",
+            "en": "Every encounter is unique and will never happen again, so it must be treasured."
+        },
+        "tags": [
+            "relationships",
+            "philosophy",
+            "life"
+        ],
+        "tags_id": [
+            "hubungan",
+            "filosofi",
+            "kehidupan"
+        ],
+        "jlpt": "N2",
+        "equivalent": {
+            "id": "Satu kali pertemuan, seumur hidup.",
+            "en": "Once in a lifetime encounter."
+        },
+        "examples": [
+            {
+                "ja": "一期一会の精神で、ひとつひとつの出会いを大切にしたい。",
+                "romaji": "Ichigo ichie no seishin de, hitotsu hitotsu no deai o taisetsu ni shitai.",
+                "id": "Dengan semangat ichigo ichie, saya ingin menghargai setiap pertemuan."
+            }
+        ],
+        "related": [
+            "ishin-denshin"
+        ]
+    },
+    {
+        "id": "saru-mo-ki-kara-ochiru",
+        "japanese": "猿も木から落ちる",
+        "reading": "さるもきからおちる",
+        "romaji": "Saru mo Ki kara Ochiru",
+        "literal": "Even monkeys fall from trees",
+        "meaning": {
+            "id": "Bahkan seorang ahli pun bisa melakukan kesalahan. Tidak ada manusia yang sempurna.",
+            "en": "Even experts make mistakes. Nobody is perfect."
+        },
+        "tags": [
+            "animals",
+            "life",
+            "warnings"
+        ],
+        "tags_id": [
+            "hewan",
+            "kehidupan",
+            "peringatan"
+        ],
+        "jlpt": "N3",
+        "equivalent": {
+            "id": "Monyet pun jatuh dari pohon.",
+            "en": "Even Homer sometimes nods."
+        },
+        "examples": [
+            {
+                "ja": "猿も木から落ちるというから、油断しないようにしましょう。",
+                "romaji": "Saru mo ki kara ochiru to iu kara, yudan shinai you ni shimashou.",
+                "id": "Karena kata pepatah \"monyet pun jatuh dari pohon\", mari kita jangan lengah."
+            }
+        ],
+        "related": [
+            "koubou-mo-fude-no-ayamari",
+            "kappa-no-kawanagare"
+        ]
+    },
+    {
+        "id": "isseki-nichou",
+        "japanese": "一石二鳥",
+        "reading": "いっせきにちょう",
+        "romaji": "Isseki Nichou",
+        "literal": "One stone, two birds",
+        "meaning": {
+            "id": "Mendapatkan dua keuntungan sekaligus dari satu tindakan.",
+            "en": "Achieving two benefits from a single action."
+        },
+        "tags": [
+            "efficiency",
+            "numbers",
+            "strategy"
+        ],
+        "tags_id": [
+            "efisiensi",
+            "angka",
+            "strategi"
+        ],
+        "jlpt": "N3",
+        "equivalent": {
+            "id": "Sambil menyelam minum air.",
+            "en": "Kill two birds with one stone."
+        },
+        "examples": [
+            {
+                "ja": "自転車で通勤すれば、運動にもなるし交通費も節約できて一石二鳥だ。",
+                "romaji": "Jitensha de tsuukin sureba, undou ni mo naru shi koutsuu-hi mo setsuyaku dekite isseki nichou da.",
+                "id": "Jika berangkat kerja naik sepeda, bisa olahraga sekaligus hemat ongkos transportasi, satu batu dua burung."
+            }
+        ],
+        "related": [
+            "ikkyo-ryoutoku"
+        ]
+    },
+    {
+        "id": "neko-ni-koban",
+        "japanese": "猫に小判",
+        "reading": "ねこにこばん",
+        "romaji": "Neko ni Koban",
+        "literal": "Gold coins to a cat",
+        "meaning": {
+            "id": "Memberikan sesuatu yang berharga kepada seseorang yang tidak bisa menghargai nilainya. Sia-sia belaka.",
+            "en": "Giving something valuable to someone who can't appreciate its worth. A complete waste."
+        },
+        "tags": [
+            "animals",
+            "warnings",
+            "life"
+        ],
+        "tags_id": [
+            "hewan",
+            "peringatan",
+            "kehidupan"
+        ],
+        "jlpt": "N3",
+        "equivalent": {
+            "id": "Memberi mutiara pada babi.",
+            "en": "Casting pearls before swine."
+        },
+        "examples": [
+            {
+                "ja": "子供に高級ワインを出しても猫に小判だよ。",
+                "romaji": "Kodomo ni koukyuu wain o dashitemo neko ni koban da yo.",
+                "id": "Memberikan wine mahal kepada anak kecil hanya akan sia-sia."
+            }
+        ],
+        "related": [
+            "buta-ni-shinju"
+        ]
+    },
+    {
+        "id": "ishi-no-ue-ni-mo-sannen",
+        "japanese": "石の上にも三年",
+        "reading": "いしのうえにもさんねん",
+        "romaji": "Ishi no Ue ni mo Sannen",
+        "literal": "Three years on a stone",
+        "meaning": {
+            "id": "Kesabaran dan ketekunan pasti akan membuahkan hasil. Jika kita bertahan cukup lama, bahkan batu dingin pun akan menjadi hangat.",
+            "en": "Patience and perseverance will always pay off. If you persist long enough, even a cold stone will become warm."
+        },
+        "tags": [
+            "patience",
+            "numbers",
+            "life"
+        ],
+        "tags_id": [
+            "kesabaran",
+            "angka",
+            "kehidupan"
+        ],
+        "jlpt": "N3",
+        "equivalent": {
+            "id": "Tiga tahun di atas batu.",
+            "en": "Patience is a virtue."
+        },
+        "examples": [
+            {
+                "ja": "石の上にも三年というから、もう少し頑張ってみよう。",
+                "romaji": "Ishi no ue ni mo sannen to iu kara, mou sukoshi ganbatte miyou.",
+                "id": "Karena kata pepatah \"tiga tahun di atas batu\", mari kita berusaha sedikit lagi."
+            }
+        ],
+        "related": [
+            "keizoku-wa-chikara-nari"
+        ]
+    },
+    {
+        "id": "hana-yori-dango",
+        "japanese": "花より団子",
+        "reading": "はなよりだんご",
+        "romaji": "Hana Yori Dango",
+        "literal": "Dumplings over flowers",
+        "meaning": {
+            "id": "Lebih mementingkan hal-hal praktis (isi perut) daripada keindahan atau estetika.",
+            "en": "Preferring practical things over aesthetic beauty. Substance over style."
+        },
+        "tags": [
+            "life",
+            "food",
+            "philosophy"
+        ],
+        "tags_id": [
+            "kehidupan",
+            "makanan",
+            "filosofi"
+        ],
+        "jlpt": "N3",
+        "equivalent": {
+            "id": "Lebih baik dango daripada bunga.",
+            "en": "Bread is better than the songs of birds."
+        },
+        "examples": [
+            {
+                "ja": "花見に来たのに、みんな食べ物に夢中で、まさに花より団子だね。",
+                "romaji": "Hanami ni kita no ni, minna tabemono ni muchuu de, masa ni hana yori dango da ne.",
+                "id": "Padahal datang untuk melihat bunga sakura, tapi semua orang sibuk makan, benar-benar hana yori dango."
+            }
+        ],
+        "related": []
+    },
+    {
+        "id": "jigou-jitoku",
+        "japanese": "自業自得",
+        "reading": "じごうじとく",
+        "romaji": "Jigou Jitoku",
+        "literal": "One's own deeds, one's own gain",
+        "meaning": {
+            "id": "Menuai apa yang ditabur. Menanggung konsekuensi dari perbuatan sendiri.",
+            "en": "Reaping what you sow. Bearing the consequences of your own actions."
+        },
+        "tags": [
+            "karma",
+            "warnings",
+            "life"
+        ],
+        "tags_id": [
+            "karma",
+            "peringatan",
+            "kehidupan"
+        ],
+        "jlpt": "N2",
+        "equivalent": {
+            "id": "Siapa yang menabur angin akan menuai badai.",
+            "en": "You reap what you sow."
+        },
+        "examples": [
+            {
+                "ja": "勉強しなかったから試験に落ちたんだよ。自業自得だね。",
+                "romaji": "Benkyou shinakatta kara shiken ni ochitan da yo. Jigou jitoku da ne.",
+                "id": "Karena tidak belajar makanya gagal ujian. Itu akibat perbuatanmu sendiri."
+            }
+        ],
+        "related": [
+            "mi-kara-deta-sabi"
+        ]
+    },
+    {
+        "id": "deru-kui-wa-utareru",
+        "japanese": "出る杭は打たれる",
+        "reading": "でるくいはうたれる",
+        "romaji": "Deru Kui wa Utareru",
+        "literal": "The nail that sticks out gets hammered down",
+        "meaning": {
+            "id": "Orang yang menonjol atau berbeda dari kelompok sering menjadi sasaran kritik atau tekanan sosial dalam masyarakat Jepang.",
+            "en": "Those who stand out or differ from the group often become targets of criticism or social pressure in Japanese society."
+        },
+        "tags": [
+            "social",
+            "culture",
+            "warnings"
+        ],
+        "tags_id": [
+            "sosial",
+            "budaya",
+            "peringatan"
+        ],
+        "jlpt": "N3",
+        "equivalent": {
+            "id": "Paku yang menonjol akan dipukul.",
+            "en": "The tall poppy gets cut."
+        },
+        "examples": [
+            {
+                "ja": "出る杭は打たれるというけど、自分らしく生きたい。",
+                "romaji": "Deru kui wa utareru to iu kedo, jibun rashiku ikitai.",
+                "id": "Meskipun ada pepatah \"paku yang menonjol akan dipukul\", saya ingin hidup menjadi diri sendiri."
+            }
+        ],
+        "related": []
+    },
+    {
+        "id": "toki-wa-kane-nari",
+        "japanese": "時は金なり",
+        "reading": "ときはかねなり",
+        "romaji": "Toki wa Kane Nari",
+        "literal": "Time is money",
+        "meaning": {
+            "id": "Waktu sangat berharga dan tidak boleh disia-siakan, sama berharganya dengan uang.",
+            "en": "Time is extremely valuable and should not be wasted, just as precious as money."
+        },
+        "tags": [
+            "money",
+            "business",
+            "life"
+        ],
+        "tags_id": [
+            "uang",
+            "bisnis",
+            "kehidupan"
+        ],
+        "jlpt": "N3",
+        "equivalent": {
+            "id": "Waktu adalah uang.",
+            "en": "Time is money."
+        },
+        "examples": [
+            {
+                "ja": "時は金なりだから、無駄な時間を過ごさないようにしよう。",
+                "romaji": "Toki wa kane nari da kara, muda na jikan o sugosanai you ni shiyou.",
+                "id": "Karena waktu adalah uang, mari kita jangan membuang-buang waktu."
+            }
+        ],
+        "related": [
+            "kouin-ya-no-gotoshi",
+            "saigetsu-hito-o-matazu"
+        ]
+    }
+]

@@ -1,0 +1,2232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kotowaza — Japanese Proverbs Dataset | Documentation</title>
+    <meta name="description"
+        content="A structured, production-grade dataset of Japanese proverbs (kotowaza) with bilingual meanings, example sentences, JLPT levels, and tags. Maintained by Jepang.org.">
+    <meta property="og:title" content="kotowaza — Japanese Proverbs Dataset">
+    <meta property="og:description"
+        content="Structured JSON dataset of Japanese proverbs with meanings in Indonesian & English.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://septn.github.io/kotowaza/">
+    <link rel="canonical" href="https://septn.github.io/kotowaza/">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700;900&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+    <style>
+        /* Prism.js Highlighting */
+        @import url('https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css');
+
+        /* ═══════════════════════════════
+               CODE BLOCKS — 呼吸法 (Breath Styles)
+           ═══════════════════════════════ */
+        pre {
+            background: #15121c !important;
+            padding: 45px 24px 24px !important;
+            border: 1px solid var(--border);
+            border-left: 4px solid var(--nichirin-gold);
+            border-radius: 2px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            position: relative;
+            overflow-x: auto;
+            margin: 32px 0;
+        }
+
+        /* Scroll Header (Katana Sheath / Scroll Top) */
+        pre::before {
+            content: '';
+            /* CSS Pattern for Japanese Scroll Fabric */
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 28px;
+            background-color: var(--bg-card);
+            background-image:
+                linear-gradient(45deg, #1a1a1a 25%, transparent 25%, transparent 75%, #1a1a1a 75%, #1a1a1a),
+                linear-gradient(45deg, #1a1a1a 25%, transparent 25%, transparent 75%, #1a1a1a 75%, #1a1a1a);
+            background-size: 10px 10px;
+            background-position: 0 0, 5px 5px;
+            opacity: 0.3;
+            border-bottom: 2px solid var(--border-flame);
+            z-index: 10;
+        }
+
+        /* Language Label (e.g. JS) - Gold Tag */
+        pre[class*="language-"]::after {
+            content: attr(class);
+            position: absolute;
+            top: 0;
+            right: 20px;
+            background: var(--nichirin-gold);
+            color: #000;
+            font-size: 0.7em;
+            font-weight: bold;
+            padding: 2px 10px;
+            border-radius: 0 0 4px 4px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+            z-index: 11;
+            text-transform: uppercase;
+        }
+
+        /* Fix for the "language-javascript" text extraction if needed */
+        pre::after {
+            content: '📜';
+            position: absolute;
+            top: 2px;
+            right: 12px;
+            font-size: 14px;
+            z-index: 12;
+            color: var(--nichirin-gold);
+            background: none;
+            padding: 0;
+            box-shadow: none;
+            border: none;
+            height: auto;
+            width: auto;
+        }
+
+        /* Ensure code inside doesn't cover background */
+        pre code {
+            background: transparent !important;
+            border: none !important;
+            box-shadow: none !important;
+            padding: 0 !important;
+            font-family: 'JetBrains Mono', monospace !important;
+            font-size: 0.95em !important;
+            line-height: 1.6;
+            color: var(--text-muted);
+            /* Base text color */
+        }
+
+        /* Inline code */
+        :not(pre)>code {
+            background: rgba(155, 109, 255, 0.1);
+            padding: 2px 6px;
+            border-radius: 2px;
+            color: var(--wisteria-light);
+            border: 1px solid rgba(155, 109, 255, 0.3);
+            font-family: 'JetBrains Mono', monospace;
+        }
+
+        /* Custom Prism Syntax Coloring for Demon Slayer Theme */
+        .token.comment,
+        .token.prolog,
+        .token.doctype,
+        .token.cdata {
+            color: var(--text-dim) !important;
+            font-style: italic !important;
+        }
+
+        .token.string,
+        .token.attr-value {
+            color: #a8ff60 !important;
+            /* Greenish for nature/water/mist variance */
+            text-shadow: 0 0 5px rgba(168, 255, 96, 0.2);
+        }
+
+        .token.punctuation {
+            color: var(--text-muted) !important;
+        }
+
+        .token.number,
+        .token.boolean {
+            color: var(--thunder) !important;
+            /* Thunder Breathing */
+            text-shadow: 0 0 5px rgba(247, 215, 49, 0.3);
+        }
+
+        .token.keyword,
+        .token.tag,
+        .token.class-name {
+            color: var(--flame-bright) !important;
+            /* Flame Breathing */
+            text-shadow: 0 0 5px rgba(255, 107, 74, 0.4);
+            font-weight: bold !important;
+        }
+
+        .token.function,
+        .token.property,
+        .token.constant,
+        .token.variable {
+            color: var(--water) !important;
+            /* Water Breathing */
+            text-shadow: 0 0 5px rgba(33, 150, 243, 0.4);
+        }
+
+        .token.operator,
+        .token.entity,
+        .token.url {
+            color: var(--wisteria-light) !important;
+        }
+
+        .token.regex,
+        .token.important {
+            color: var(--insect) !important;
+        }
+
+        /* ═══════════════════════════════
+               TOP MENU — 柱 (Hashira)
+           ═══════════════════════════════ */
+        .top-menu {
+            position: fixed;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100%;
+            max-width: 100%;
+            z-index: 1000;
+            background: linear-gradient(to bottom, #050408f2 0%, #050408d9 100%);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            border-bottom: 2px solid var(--nichirin-gold);
+            padding: 15px 0;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.8);
+            transition: all 0.3s ease;
+        }
+
+        /* Decorative gold line detail */
+        .top-menu::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, var(--nichirin-gold), transparent);
+            opacity: 0.5;
+        }
+
+        .menu-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* Navbar Text Styles */
+        .menu-brand {
+            font-family: 'Noto Serif JP', serif;
+            font-weight: 900;
+            font-size: 1.4em;
+            color: var(--text);
+            letter-spacing: 0.1em;
+            text-shadow: 0 0 10px var(--wisteria-glow);
+        }
+
+        .menu-links {
+            display: flex;
+            gap: 32px;
+        }
+
+        .menu-links a {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 0.95em;
+            font-weight: 600;
+            transition: all 0.3s;
+            position: relative;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .menu-links a:hover {
+            color: var(--nichirin-gold);
+            text-shadow: 0 0 10px var(--nichirin-glow);
+        }
+
+        /* Nav GitHub Button */
+        .nav-btn-github {
+            margin-left: 10px;
+            padding: 6px 16px;
+            border: 1px solid var(--nichirin-gold);
+            border-radius: 4px;
+            color: var(--nichirin-gold) !important;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: rgba(255, 215, 0, 0.05);
+        }
+
+        .nav-btn-github:hover {
+            background: var(--nichirin-gold) !important;
+            color: #000 !important;
+            box-shadow: 0 0 15px var(--nichirin-glow);
+            transform: translateY(-2px);
+        }
+
+        /* ═══════════════════════════════════════════
+鬼滅の刃 — KIMETSU NO YAIBA DESIGN SYSTEM
+═══════════════════════════════════════════ */
+        :root {
+            /* Core palette — Midnight & Blood */
+            --bg-deepest: #050408;
+            --bg-dark: #0a0810;
+            --bg-surface: #120f1a;
+            --bg-card: #181422;
+            /* Borders */
+            --border: #2a2440;
+            --border-glow: #4a3880;
+            --border-flame: #e8473f;
+            /* Breathing Styles */
+            --flame: #e8473f;
+            --flame-bright: #ff6b4a;
+            --flame-glow: rgba(232, 71, 63, 0.4);
+            --water: #2196f3;
+            --water-deep: #1565c0;
+            --water-glow: rgba(33, 150, 243, 0.4);
+            --wisteria: #9b6dff;
+            --wisteria-light: #c4a1ff;
+            --wisteria-glow: rgba(155, 109, 255, 0.25);
+            --thunder: #f7d731;
+            --thunder-glow: rgba(247, 215, 49, 0.3);
+            --beast: #5d4037;
+            --mist: #7ecfcf;
+            --insect: #b388ff;
+            /* Nichirin Gold */
+            --nichirin-gold: #d4a843;
+            --nichirin-glow: rgba(212, 168, 67, 0.3);
+            /* Character Patterns */
+            --tanjiro-green: #295542;
+            --tanjiro-black: #111111;
+            --nezuko-pink: #f5a9b8;
+            --zenitsu-orange: #ff9800;
+            /* Text */
+            --text: #ede8f5;
+            --text-muted: #9daab6;
+            --text-dim: #636e72;
+            /* Effects */
+            --shadow-card: 0 8px 32px rgba(0, 0, 0, 0.4);
+            --glow-text: 0 0 12px rgba(255, 255, 255, 0.1);
+            --radius: 12px;
+            --radius-lg: 20px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--bg-deepest);
+            color: var(--text);
+            line-height: 1.7;
+            overflow-x: hidden;
+        }
+
+        /* Scrollbar */
+        ::-webkit-scrollbar {
+            width: 10px;
+            height: 10px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: var(--bg-dark);
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #333;
+            border-radius: 5px;
+            border: 1px solid var(--bg-dark);
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: var(--flame);
+        }
+
+        /* ═══════════════════════════════
+BACKGROUND LAYERS
+═══════════════════════════════ */
+        .bg-layer {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        /* Tanjiro's Ichimatsu (Checkered) */
+        .pattern-ichimatsu {
+            z-index: 1;
+            opacity: 0.04;
+            background-image:
+                linear-gradient(45deg, var(--tanjiro-green) 25%, transparent 25%),
+                linear-gradient(-45deg, var(--tanjiro-green) 25%, transparent 25%),
+                linear-gradient(45deg, transparent 75%, var(--tanjiro-green) 75%),
+                linear-gradient(-45deg, transparent 75%, var(--tanjiro-green) 75%);
+            background-size: 60px 60px;
+            background-position: 0 0, 0 30px, 30px -30px, -30px 0;
+            mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 20%, rgba(0, 0, 0, 0) 80%);
+        }
+
+        /* Zenitsu's Uroko (Triangles) - Bottom Right Accent */
+        .pattern-uroko {
+            z-index: 1;
+            opacity: 0.03;
+            background-image: linear-gradient(45deg, var(--thunder) 50%, transparent 50%);
+            background-size: 30px 30px;
+            bottom: 0;
+            top: auto;
+            height: 50vh;
+            mask-image: radial-gradient(circle at bottom right, black, transparent 70%);
+        }
+
+        /* Wisteria Particles (Nezuko/Shinobu vibe) */
+        .particles {
+            z-index: 2;
+            overflow: hidden;
+        }
+
+        .petal {
+            position: absolute;
+            background: var(--wisteria);
+            border-radius: 50% 50% 50% 0;
+            opacity: 0;
+            animation: fall linear infinite;
+        }
+
+        /* (Petal animations same as before, refined) */
+        .petal:nth-child(1) {
+            left: 10%;
+            width: 6px;
+            height: 10px;
+            animation-duration: 12s;
+        }
+
+        .petal:nth-child(2) {
+            left: 25%;
+            width: 8px;
+            height: 13px;
+            animation-duration: 15s;
+            animation-delay: 2s;
+        }
+
+        .petal:nth-child(3) {
+            left: 40%;
+            width: 5px;
+            height: 9px;
+            animation-duration: 11s;
+            animation-delay: 4s;
+        }
+
+        .petal:nth-child(4) {
+            left: 55%;
+            width: 7px;
+            height: 11px;
+            animation-duration: 14s;
+            animation-delay: 1s;
+        }
+
+        .petal:nth-child(5) {
+            left: 70%;
+            width: 9px;
+            height: 14px;
+            animation-duration: 13s;
+            animation-delay: 3s;
+        }
+
+        .petal:nth-child(6) {
+            left: 85%;
+            width: 6px;
+            height: 10px;
+            animation-duration: 16s;
+            animation-delay: 5s;
+        }
+
+        @keyframes fall {
+            0% {
+                transform: translateY(-20px) rotate(0deg);
+                opacity: 0;
+            }
+
+            10% {
+                opacity: 0.6;
+            }
+
+            90% {
+                opacity: 0.2;
+            }
+
+            100% {
+                transform: translateY(110vh) rotate(720deg);
+                opacity: 0;
+            }
+        }
+
+        /* ═══════════════════════════════
+LAYOUT
+═══════════════════════════════ */
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 0 24px;
+            position: relative;
+            z-index: 10;
+        }
+
+        /* ═══════════════════════════════
+COMPONENTS
+═══════════════════════════════ */
+        /* Typography */
+        h1,
+        h2,
+        h3,
+        .hero-kanji,
+        .jp,
+        .kanji-label,
+        .kanji {
+            font-family: 'Noto Serif JP', serif;
+        }
+
+        h2 {
+            margin-bottom: 32px;
+            font-size: 2em;
+        }
+
+        h3 {
+            margin-top: 48px;
+            margin-bottom: 20px;
+            font-size: 1.5em;
+        }
+
+        /* Toned down Kanji labels */
+        .kanji-label {
+            font-size: 0.6em;
+            opacity: 0.4;
+            margin-left: 12px;
+            font-weight: 400;
+            color: var(--text-muted);
+            vertical-align: middle;
+            text-shadow: none;
+            /* Remove glow to keep it subtle */
+        }
+
+        @keyframes demon-pulse {
+            0% {
+                box-shadow: 0 0 0 0 rgba(255, 69, 0, 0.4);
+            }
+
+            70% {
+                box-shadow: 0 0 0 10px rgba(255, 69, 0, 0);
+            }
+
+            100% {
+                box-shadow: 0 0 0 0 rgba(255, 69, 0, 0);
+            }
+        }
+
+        /* Buttons */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            padding: 16px 36px;
+            border-radius: 2px;
+            font-family: 'Noto Serif JP', serif;
+            font-weight: 800;
+            font-size: 1.1em;
+            letter-spacing: 0.15em;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+            text-transform: uppercase;
+            z-index: 10;
+        }
+
+        /* Blood Demon Art Style (Live Demo) */
+        .btn-flame {
+            background: linear-gradient(135deg, #8b0000 0%, #ff0000 50%, #8b0000 100%);
+            color: #fff;
+            border: 1px solid #ff4500;
+            box-shadow: 0 0 20px rgba(255, 0, 0, 0.4), inset 0 0 20px rgba(0, 0, 0, 0.5);
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 0, 0, 0.8);
+            animation: demon-pulse 2s infinite;
+        }
+
+        .btn-flame::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: repeating-linear-gradient(45deg,
+                    transparent,
+                    transparent 10px,
+                    rgba(0, 0, 0, 0.1) 10px,
+                    rgba(0, 0, 0, 0.1) 20px);
+            z-index: -1;
+            transition: 0.5s;
+        }
+
+        .btn-flame:hover {
+            transform: scale(1.05) translateY(-2px);
+            box-shadow: 0 0 40px rgba(255, 0, 0, 0.8), inset 0 0 10px rgba(0, 0, 0, 0.5);
+            background: linear-gradient(135deg, #ff0000 0%, #ff4500 50%, #ff0000 100%);
+            border-color: #fff;
+            letter-spacing: 0.2em;
+        }
+
+        .btn-flame:hover::before {
+            transform: rotate(45deg);
+        }
+
+        /* Dark Blade Style (GitHub) */
+        .btn-nichirin {
+            background: #0a0a0a;
+            color: var(--nichirin-gold);
+            border: 1px solid var(--nichirin-gold);
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
+            position: relative;
+        }
+
+        .btn-nichirin::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, var(--nichirin-gold), transparent);
+            transition: 0.4s;
+            opacity: 0.5;
+            transform: skewX(-20deg);
+        }
+
+        .btn-nichirin:hover {
+            background: var(--nichirin-gold);
+            color: #000;
+            box-shadow: 0 0 30px var(--nichirin-glow);
+            text-shadow: none;
+            font-weight: 900;
+        }
+
+        .btn-nichirin:hover::after {
+            left: 200%;
+        }
+
+
+
+
+        .btn-nichirin:hover::before {
+            transform: scaleX(1);
+        }
+
+        /* Removed old code block CSS */
+        /* ═══════════════════════════════
+               INSTALL COMMAND
+           ═══════════════════════════════ */
+        .install {
+            position: relative;
+            margin: 20px auto 40px;
+            max-width: 480px;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        .install::before {
+            content: 'CLICK TO COPY';
+            position: absolute;
+            top: -25px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 0.7em;
+            letter-spacing: 0.2em;
+            color: var(--text-dim);
+            opacity: 0;
+            transition: 0.3s;
+        }
+
+        .install:hover::before {
+            opacity: 1;
+            top: -35px;
+            color: var(--flame-bright);
+            text-shadow: 0 0 10px var(--flame);
+        }
+
+        .install code {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(10, 8, 16, 0.8);
+            border: 1px solid var(--border-glow);
+            padding: 12px 24px;
+            border-radius: 50px;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 1.1em;
+            color: var(--flame-bright);
+            box-shadow: 0 0 20px rgba(232, 71, 63, 0.1), inset 0 0 20px rgba(0, 0, 0, 0.5);
+            transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+            backdrop-filter: blur(5px);
+            width: 100%;
+        }
+
+        .install:hover code {
+            border-color: var(--flame);
+            box-shadow: 0 0 40px var(--flame-glow), inset 0 0 30px rgba(232, 71, 63, 0.2);
+            transform: scale(1.03);
+            color: #fff;
+            background: rgba(232, 71, 63, 0.1);
+        }
+
+        .install code::before {
+            content: '>';
+            margin-right: 16px;
+            color: var(--text-muted);
+            font-weight: bold;
+        }
+
+        /* Copy success state */
+        .install.copied code {
+            border-color: var(--nichirin-gold);
+            color: var(--nichirin-gold);
+            box-shadow: 0 0 50px var(--nichirin-glow);
+        }
+
+        .install.copied code::after {
+            content: 'COPIED!';
+            margin-left: 16px;
+            font-size: 0.7em;
+            color: var(--nichirin-gold);
+            opacity: 0.8;
+        }
+
+        /* ═══════════════════════════════
+               KATANA DIVIDER
+           ═══════════════════════════════ */
+        .katana-divider {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 50px 0 30px;
+            /* Reduced from 80px 0 40px */
+            gap: 20px;
+            opacity: 0.8;
+            position: relative;
+        }
+
+        .katana-divider .line {
+            height: 1px;
+            flex: 1;
+            background: linear-gradient(90deg, transparent, var(--border-glow), transparent);
+            box-shadow: 0 0 10px var(--wisteria-glow);
+        }
+
+        .katana-divider .kanji {
+            font-size: 2em;
+            color: var(--text-dim);
+            font-family: 'Noto Serif JP', serif;
+            text-shadow: 0 0 15px var(--wisteria-glow);
+        }
+
+        /* ═══════════════════════════════
+               HERO — 壱ノ型
+           ═══════════════════════════════ */
+        .hero {
+            padding: 100px 0 40px;
+            /* Reduced from 140px 0 100px */
+            text-align: center;
+            perspective: 1000px;
+        }
+
+        /* The Slash Animation - Jidaigeki Style */
+        .hero-kanji {
+            font-size: 6.5em;
+            line-height: 1;
+            margin-bottom: 0px;
+            background: linear-gradient(to bottom, #fff 30%, var(--text-muted) 100%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            filter: drop-shadow(0 0 25px rgba(255, 255, 255, 0.2));
+            animation: float 6s ease-in-out infinite;
+            position: relative;
+            display: inline-block;
+        }
+
+        /* Slash 1 */
+        .hero-kanji::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: -50%;
+            width: 200%;
+            height: 2px;
+            background: #fff;
+            transform: rotate(-30deg) scaleX(0);
+            box-shadow: 0 0 15px var(--water-deep), 0 0 30px var(--water);
+            animation: slash-1 4s cubic-bezier(0.1, 0.8, 0.1, 1) infinite;
+            opacity: 0;
+            z-index: 2;
+            pointer-events: none;
+        }
+
+        /* Slash 2 */
+        .hero-kanji::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: -50%;
+            width: 200%;
+            height: 2px;
+            background: #fff;
+            transform: rotate(20deg) scaleX(0);
+            box-shadow: 0 0 15px var(--flame), 0 0 30px var(--flame-bright);
+            animation: slash-2 4s cubic-bezier(0.1, 0.8, 0.1, 1) infinite;
+            animation-delay: 0.15s;
+            opacity: 0;
+            z-index: 2;
+            pointer-events: none;
+        }
+
+        @keyframes slash-1 {
+            0% {
+                transform: rotate(-30deg) scaleX(0) translateX(-50px);
+                opacity: 0;
+            }
+
+            5% {
+                opacity: 1;
+                transform: rotate(-30deg) scaleX(1) translateX(0);
+            }
+
+            15% {
+                opacity: 0;
+                transform: rotate(-30deg) scaleX(1) translateX(50px);
+            }
+
+            100% {
+                opacity: 0;
+            }
+        }
+
+        @keyframes slash-2 {
+            0% {
+                transform: rotate(20deg) scaleX(0) translateX(50px);
+                opacity: 0;
+            }
+
+            5% {
+                opacity: 1;
+                transform: rotate(20deg) scaleX(1) translateX(0);
+            }
+
+            15% {
+                opacity: 0;
+                transform: rotate(20deg) scaleX(1) translateX(-50px);
+            }
+
+            100% {
+                opacity: 0;
+            }
+        }
+
+        /* API Table Styles */
+        .api-table-wrap {
+            overflow-x: auto;
+            margin-top: 30px;
+            border-radius: 4px;
+            /* Rigid */
+            border: 1px solid var(--border);
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+            background: rgba(10, 8, 16, 0.95);
+            position: relative;
+        }
+
+        /* Demon Pattern BGM for Table */
+        .api-table-wrap::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background-image: repeating-linear-gradient(45deg, rgba(255, 255, 255, 0.03) 0, rgba(255, 255, 255, 0.03) 1px, transparent 1px, transparent 10px);
+            opacity: 0.3;
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.95em;
+        }
+
+        /* Force Demon Armor Style for Table Headers */
+        .api-table-wrap table th,
+        th {
+            text-align: left;
+            padding: 18px 24px;
+            border-bottom: 2px solid var(--nichirin-gold) !important;
+            color: var(--nichirin-gold) !important;
+            font-family: 'Noto Serif JP', serif;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            font-size: 0.9em;
+            background: rgba(30, 20, 10, 0.95) !important;
+            text-shadow: 0 0 5px rgba(255, 215, 0, 0.3);
+            position: relative;
+            z-index: 1;
+            box-shadow: inset 0 -2px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        td {
+            padding: 16px 24px;
+            border-bottom: 1px solid var(--border);
+            color: var(--text-dim);
+            vertical-align: middle;
+            transition: all 0.2s;
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        tr:hover td {
+            background: rgba(255, 255, 255, 0.02);
+            color: var(--text);
+        }
+
+        tr:hover td code {
+            background: rgba(155, 109, 255, 0.2);
+            box-shadow: 0 0 10px var(--wisteria-glow);
+        }
+
+        .hero h1 {
+            font-size: 3em;
+            letter-spacing: -1px;
+            background: linear-gradient(135deg, var(--flame-bright), var(--nichirin-gold));
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 12px;
+        }
+
+        .subtitle {
+            font-family: 'Noto Serif JP', serif;
+            letter-spacing: 0.4em;
+            color: var(--water);
+            text-transform: uppercase;
+            font-size: 1.1em;
+            margin-bottom: 32px;
+            text-shadow: 0 0 10px var(--water-glow);
+        }
+
+        .hero .tagline {
+            max-width: 600px;
+            margin: 0 auto 40px;
+            color: var(--text-muted);
+            font-size: 1.15em;
+        }
+
+        /* ═══════════════════════════════
+CARDS — 呼吸
+═══════════════════════════════ */
+        .proverb-card {
+            background: rgba(20, 18, 30, 0.6);
+            backdrop-filter: blur(10px);
+            border: 1px solid var(--border-glow);
+            border-radius: var(--radius-lg);
+            padding: 48px 32px;
+            margin-bottom: 80px;
+            position: relative;
+            overflow: hidden;
+            text-align: center;
+            box-shadow: var(--shadow-card);
+            transition: transform 0.4s;
+        }
+
+        .proverb-card:hover {
+            transform: scale(1.02);
+            border-color: var(--flame);
+            box-shadow: 0 0 50px rgba(232, 71, 63, 0.2);
+        }
+
+        .proverb-card .jp {
+            font-size: 3em;
+            margin-bottom: 12px;
+            color: var(--text);
+            text-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+        }
+
+        .proverb-card .romaji {
+            color: var(--flame-bright);
+            font-family: 'Inter', sans-serif;
+            font-weight: 600;
+            letter-spacing: 1px;
+            margin-bottom: 24px;
+            text-transform: uppercase;
+            font-size: 0.9em;
+        }
+
+        .proverb-card .meaning {
+            font-size: 1.25em;
+            font-family: 'Noto Serif JP', serif;
+            font-style: italic;
+            color: var(--text-muted);
+            border-top: 1px solid var(--border);
+            border-bottom: 1px solid var(--border);
+            padding: 20px 0;
+            display: inline-block;
+            width: 80%;
+        }
+
+        /* ═══════════════════════════════
+FEATURES — 柱
+═══════════════════════════════ */
+        .section-header {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 40px;
+        }
+
+        .section-header h2 {
+            font-size: 2em;
+            margin: 0;
+            background: linear-gradient(90deg, #fff, var(--text-muted));
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .katana-line {
+            flex: 1;
+            height: 1px;
+            background: linear-gradient(90deg, var(--flame), var(--wisteria), transparent);
+            box-shadow: 0 0 10px var(--flame);
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 24px;
+        }
+
+        .feature {
+            background: rgba(10, 8, 16, 0.95);
+            border: 1px solid var(--border);
+            padding: 32px;
+            border-radius: 4px !important;
+            /* Force Rigid talisman shape */
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            position: relative;
+            z-index: 1;
+            overflow: hidden;
+            box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+            backdrop-filter: none !important;
+        }
+
+        /* Demon Pattern BGM */
+        .feature::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background-image: repeating-linear-gradient(45deg, rgba(255, 255, 255, 0.03) 0, rgba(255, 255, 255, 0.03) 1px, transparent 1px, transparent 10px);
+            opacity: 0.5;
+            z-index: -1;
+            pointer-events: none;
+            transition: 0.5s;
+        }
+
+        /* Breathing Style Hover Glow */
+        .feature::before {
+            content: '';
+            position: absolute;
+            inset: -2px;
+            border-radius: inherit;
+            padding: 2px;
+            background: linear-gradient(135deg, var(--water), var(--wisteria), var(--flame));
+            -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+            mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+            -webkit-mask-composite: xor;
+            mask-composite: exclude;
+            opacity: 0;
+            transition: opacity 0.4s;
+        }
+
+        .feature:hover {
+            transform: translateY(-8px) scale(1.02);
+            box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.6), 0 0 20px rgba(155, 109, 255, 0.3);
+            background: rgba(20, 10, 30, 0.95);
+            border-color: transparent;
+        }
+
+        .feature:hover::after {
+            opacity: 0.8;
+            background-image: repeating-linear-gradient(45deg, rgba(155, 109, 255, 0.1) 0, rgba(155, 109, 255, 0.1) 1px, transparent 1px, transparent 10px);
+        }
+
+        .feature:hover::before {
+            opacity: 1;
+        }
+
+        .feature .icon {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            display: inline-block;
+            filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.3));
+        }
+
+        .feature strong {
+            display: block;
+            margin-bottom: 12px;
+            font-size: 1.25em;
+            color: var(--text);
+            font-family: 'Noto Serif JP', serif;
+            letter-spacing: 0.05em;
+        }
+
+        .feature p {
+            color: var(--text-dim);
+            font-size: 0.95em;
+            line-height: 1.6;
+        }
+
+        /* ═══════════════════════════════
+        USE CASES — 隊律 (Corps Rules)
+        ═══════════════════════════════ */
+        .use-cases {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-top: 40px;
+        }
+
+        .use-case {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            padding: 24px;
+            background: rgba(10, 8, 16, 0.95);
+            border: 1px solid var(--border);
+            border-radius: 4px !important;
+            /* Force Rigid talisman shape */
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Demon Pattern */
+        .use-case::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background-image: repeating-linear-gradient(45deg, rgba(255, 255, 255, 0.03) 0, rgba(255, 255, 255, 0.03) 1px, transparent 1px, transparent 10px);
+            opacity: 0.5;
+            transition: 0.5s;
+        }
+
+        /* Nichirin Gold edge on hover */
+        .use-case:hover {
+            background: rgba(20, 18, 10, 0.95);
+            border-color: var(--nichirin-gold);
+            transform: translateX(5px) scale(1.02);
+            box-shadow: -5px 0 20px -5px rgba(255, 215, 0, 0.3);
+        }
+
+        .use-case:hover::before {
+            opacity: 0.8;
+            background-image: repeating-linear-gradient(45deg, rgba(255, 215, 0, 0.05) 0, rgba(255, 215, 0, 0.05) 1px, transparent 1px, transparent 10px);
+        }
+
+        .uc-icon {
+            font-size: 2em;
+            filter: grayscale(0.5);
+            transition: 0.3s;
+        }
+
+        .use-case:hover .uc-icon {
+            filter: grayscale(0) drop-shadow(0 0 8px rgba(255, 215, 0, 0.4));
+            transform: scale(1.1) rotate(5deg);
+        }
+
+        .uc-text strong {
+            display: block;
+            font-size: 1.1em;
+            color: var(--text-muted);
+            margin-bottom: 4px;
+            font-family: 'Noto Serif JP', serif;
+            transition: 0.3s;
+        }
+
+        .use-case:hover .uc-text strong {
+            color: var(--nichirin-gold);
+        }
+
+        .uc-text span {
+            font-size: 0.9em;
+            color: var(--text-dim);
+        }
+
+
+
+        .feature strong {
+            display: block;
+            font-size: 1.2em;
+            margin-bottom: 8px;
+            color: var(--text);
+        }
+
+        .feature p {
+            color: var(--text-dim);
+            font-size: 0.95em;
+        }
+
+        /* ═══════════════════════════════
+TAGS — 全集中
+═══════════════════════════════ */
+        .breathing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+            gap: 12px;
+        }
+
+        .breathing-tag {
+            background: rgba(10, 8, 16, 0.95);
+            border: 1px solid var(--border);
+            padding: 16px 20px;
+            border-radius: 4px;
+            /* Rigid talisman shape */
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            font-size: 0.95em;
+            transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Demon Pattern Background */
+        .breathing-tag::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background-image: repeating-linear-gradient(45deg, rgba(255, 255, 255, 0.03) 0, rgba(255, 255, 255, 0.03) 1px, transparent 1px, transparent 10px);
+            opacity: 0.5;
+            transition: 0.5s;
+        }
+
+        /* Hover: Breathing Technique Activation */
+        .breathing-tag:hover {
+            border-color: var(--flame);
+            background: rgba(20, 0, 0, 0.95);
+            transform: translateX(5px) scale(1.02);
+            box-shadow: 0 0 20px rgba(255, 69, 0, 0.3), inset 0 0 15px rgba(255, 0, 0, 0.1);
+        }
+
+        .breathing-tag:hover::before {
+            opacity: 0.8;
+            background-image: repeating-linear-gradient(45deg, rgba(255, 69, 0, 0.1) 0, rgba(255, 69, 0, 0.1) 1px, transparent 1px, transparent 10px);
+        }
+
+        .breathing-tag .tag-icon {
+            font-size: 1.4em;
+            filter: grayscale(1) brightness(0.8);
+            transition: 0.3s;
+        }
+
+        .breathing-tag:hover .tag-icon {
+            filter: grayscale(0) drop-shadow(0 0 8px var(--flame));
+            transform: scale(1.2);
+        }
+
+        .breathing-tag .tag-name {
+            font-weight: 700;
+            color: var(--text-muted);
+            font-family: 'Noto Serif JP', serif;
+            letter-spacing: 0.05em;
+            transition: 0.3s;
+            text-transform: uppercase;
+        }
+
+        .breathing-tag:hover .tag-name {
+            color: var(--flame-bright);
+            text-shadow: 0 0 10px var(--flame-glow);
+        }
+
+        .breathing-tag .tag-desc {
+            font-size: 0.8em;
+            color: var(--text-dim);
+            opacity: 0.6;
+            margin-left: auto;
+            font-style: italic;
+            transition: 0.3s;
+        }
+
+        .breathing-tag:hover .tag-desc {
+            color: var(--wisteria-light);
+            opacity: 1;
+        }
+
+        /* ═══════════════════════════════
+FOOTER
+═══════════════════════════════ */
+        /* ═══════════════════════════════
+               FOOTER — 終 (End)
+           ═══════════════════════════════ */
+        .footer-wisteria {
+            margin-top: 100px;
+            padding: 80px 0 40px;
+            border-top: 3px solid var(--border);
+            background:
+                radial-gradient(circle at top, rgba(155, 109, 255, 0.1) 0%, transparent 70%),
+                linear-gradient(to bottom, var(--bg-deepest), #000);
+            position: relative;
+            overflow: hidden;
+            color: var(--text-muted);
+        }
+
+        /* Katana Slash Divider */
+        .footer-wisteria::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, var(--wisteria), var(--flame), var(--wisteria), transparent);
+            box-shadow: 0 0 15px var(--wisteria-glow);
+        }
+
+        /* "Metsu" (Destroy/Slay) Watermark */
+        .footer-wisteria::after {
+            content: '滅';
+            position: absolute;
+            top: 60%;
+            right: 5%;
+            transform: translateY(-50%) rotate(10deg);
+            font-size: 25em;
+            font-family: 'Noto Serif JP', serif;
+            color: rgba(255, 255, 255, 0.03);
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .footer-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 24px;
+            position: relative;
+            z-index: 2;
+            gap: 40px;
+        }
+
+        .footer-left {
+            flex: 1;
+            min-width: 280px;
+        }
+
+        .footer-brand {
+            font-size: 2em;
+            font-family: 'Noto Serif JP';
+            color: var(--text);
+            text-shadow: 0 0 15px var(--wisteria-glow);
+            margin-bottom: 8px;
+        }
+
+        .footer-tagline {
+            font-weight: 700;
+            color: var(--wisteria-light);
+            margin-bottom: 16px;
+            letter-spacing: 0.05em;
+        }
+
+        .footer-desc {
+            font-size: 0.9em;
+            line-height: 1.6;
+            color: var(--text-dim);
+            margin-bottom: 24px;
+        }
+
+        .footer-breathing {
+            font-family: 'Noto Serif JP', serif;
+            font-size: 0.8em;
+            color: var(--flame);
+            letter-spacing: 0.2em;
+            opacity: 0.8;
+            margin-top: 0;
+        }
+
+        .footer-right {
+            display: flex;
+            gap: 60px;
+        }
+
+        .footer-col {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .footer-col h3 {
+            font-size: 1em;
+            color: var(--text);
+            margin-bottom: 8px;
+            border-bottom: 2px solid var(--nichirin-gold);
+            display: inline-block;
+            padding-bottom: 4px;
+            width: fit-content;
+        }
+
+        .footer-col a {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 0.9em;
+            transition: all 0.3s;
+        }
+
+        .footer-col a:hover {
+            color: var(--wisteria-light);
+            transform: translateX(5px);
+            text-shadow: 0 0 8px var(--wisteria-glow);
+        }
+
+        .footer-bottom {
+            margin-top: 60px;
+            padding-top: 24px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            text-align: center;
+            font-size: 0.85em;
+            color: var(--text-dim);
+            position: relative;
+            z-index: 2;
+        }
+
+        .footer-bottom a {
+            color: var(--text-muted);
+            text-decoration: none;
+            border-bottom: 1px dashed var(--text-dim);
+            transition: 0.3s;
+        }
+
+        .footer-bottom a:hover {
+            color: var(--flame-bright);
+            border-bottom-style: solid;
+        }
+
+        @media (max-width: 768px) {
+            .footer-content {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .footer-right {
+                justify-content: center;
+                gap: 40px;
+            }
+
+            .footer-col h3 {
+                margin: 0 auto 12px;
+            }
+
+            .footer-wisteria::after {
+                font-size: 15em;
+                top: 50%;
+                right: 50%;
+                transform: translate(50%, -50%);
+            }
+        }
+
+        /* Buttons */
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s;
+            border: 1px solid transparent;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin: 0 8px;
+        }
+
+        .btn-flame {
+            background: linear-gradient(45deg, var(--flame), #ff4500);
+            color: white;
+            box-shadow: 0 4px 15px rgba(255, 69, 0, 0.3);
+            border: 1px solid var(--border-flame);
+        }
+
+        .btn-flame:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(255, 69, 0, 0.5);
+            text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+        }
+
+        .btn-nichirin {
+            background: rgba(255, 255, 255, 0.05);
+            color: var(--nichirin-gold);
+            border: 1px solid var(--nichirin-gold);
+        }
+
+        .btn-nichirin:hover {
+            background: var(--nichirin-gold);
+            color: #000;
+            box-shadow: 0 0 15px var(--nichirin-glow);
+        }
+
+        /* Utilities */
+        .reveal {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: 0.6s ease-out;
+        }
+
+        .reveal.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        @media (max-width: 768px) {
+            .hero-kanji {
+                font-size: 4em;
+            }
+
+            .hero h1 {
+                font-size: 2em;
+            }
+
+            .proverb-card .jp {
+                font-size: 2em;
+            }
+        }
+
+        /* ═══════════════════════════════
+USE CASES — 活用法
+═══════════════════════════════ */
+        .use-cases {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+            gap: 12px;
+            margin-top: 16px;
+        }
+
+        .use-case {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 16px 20px;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            transition: all 0.3s ease;
+        }
+
+        .use-case:hover {
+            border-color: var(--border-glow);
+            box-shadow: inset 0 0 30px rgba(155, 109, 255, 0.05);
+        }
+
+        .use-case .uc-icon {
+            font-size: 1.5em;
+        }
+
+        .use-case .uc-text strong {
+            display: block;
+            font-size: 0.95em;
+        }
+
+        .use-case .uc-text span {
+            color: var(--text-muted);
+            font-size: 0.85em;
+        }
+
+        /* ═══════════════════════════════
+FOOTER — 終
+═══════════════════════════════ */
+        footer {
+            text-align: center;
+            padding: 40px 0;
+            /* Reduced from 56px */
+            border-top: 1px solid var(--border);
+            color: var(--text-muted);
+            font-size: 0.9em;
+            position: relative;
+            margin-top: 60px;
+            /* Reduced from 100px */
+        }
+
+        footer::before {
+            content: '';
+            position: absolute;
+            top: -1px;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, var(--wisteria), var(--flame), transparent);
+        }
+
+        .footer-brand {
+            font-family: 'Noto Serif JP', serif;
+            font-size: 1.3em;
+            font-weight: 700;
+            color: var(--text);
+            margin-bottom: 8px;
+            letter-spacing: 0.05em;
+        }
+
+        .footer-links {
+            margin-top: 12px;
+        }
+
+        .footer-links a {
+            color: var(--text-muted);
+            margin: 0 8px;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: var(--wisteria);
+        }
+
+        .footer-copy {
+            margin-top: 20px;
+            font-size: 0.85em;
+            color: var(--text-dim);
+        }
+
+        .footer-breathing {
+            font-family: 'Noto Serif JP', serif;
+            font-size: 0.8em;
+            color: var(--text-dim);
+            margin-top: 12px;
+            letter-spacing: 0.2em;
+        }
+
+        /* ═══════════════════════════════
+SCROLL ANIMATIONS
+═══════════════════════════════ */
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .reveal.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* ═══════════════════════════════
+RESPONSIVE
+═══════════════════════════════ */
+        @media (max-width: 600px) {
+            .hero-kanji {
+                font-size: 3em;
+            }
+
+            .hero h1 {
+                font-size: 1.8em;
+            }
+
+            .hero {
+                padding: 64px 0 48px;
+            }
+
+            .features {
+                grid-template-columns: 1fr;
+            }
+
+            .breathing-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .use-cases {
+                grid-template-columns: 1fr;
+            }
+
+            .proverb-card {
+                padding: 28px 20px;
+            }
+
+            .proverb-card .jp {
+                font-size: 1.8em;
+            }
+        }
+
+        /* ═══════════════════════════════
+               FOOTER
+           ═══════════════════════════════ */
+        /* Consolidated footer styles above */
+    </style>
+</head>
+
+<body>
+    <!-- Ichimatsu pattern overlay (Tanjiro) -->
+    <div class="bg-layer pattern-ichimatsu"></div>
+    <!-- Uroko pattern overlay (Zenitsu) -->
+    <div class="bg-layer pattern-uroko"></div>
+    <!-- Wisteria petal particles -->
+    <div class="particles">
+        <div class="petal"></div>
+        <div class="petal"></div>
+        <div class="petal"></div>
+        <div class="petal"></div>
+        <div class="petal"></div>
+        <div class="petal"></div>
+        <div class="petal"></div>
+        <div class="petal"></div>
+    </div>
+    <div class="container">
+        <!-- ═══ TOP MENU ═══ -->
+        <nav class="top-menu">
+            <div class="menu-content">
+                <div class="menu-brand">kotowaza</div>
+                <div class="menu-links">
+                    <a href="#hero">Home</a>
+                    <a href="#features">Features</a>
+                    <a href="#quick-start">Start</a>
+                    <a href="#api">API</a>
+                    <a href="https://github.com/sepTN/kotowaza" target="_blank" class="nav-btn-github">
+                        <span>GitHub</span>
+                    </a>
+                </div>
+            </div>
+        </nav>
+        <!-- ═══ HERO ═══ -->
+        <header class="hero" id="hero">
+            <div class="hero-kanji">ことわざ</div>
+            <h1>kotowaza</h1>
+            <p class="subtitle">日本のことわざデータセット</p>
+            <p class="tagline">A structured, production-grade dataset of Japanese proverbs with bilingual meanings,
+                examples, and JLPT levels.</p>
+            <div class="badges">
+                <a href="https://www.npmjs.com/package/kotowaza"><img src="https://img.shields.io/npm/v/kotowaza.svg"
+                        alt="npm version"></a>
+                <a href="https://www.npmjs.com/package/kotowaza"><img src="https://img.shields.io/npm/dm/kotowaza.svg"
+                        alt="npm downloads"></a>
+                <a href="https://opensource.org/licenses/MIT"><img
+                        src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="MIT License"></a>
+            </div>
+            <div class="hero-links">
+                <a href="https://jepang.org/peribahasa/" class="btn btn-flame">⚡ Live Demo — Jepang.org</a>
+                <a href="https://github.com/sepTN/kotowaza" class="btn btn-nichirin">GitHub Repository</a>
+            </div>
+        </header>
+        <!-- Install -->
+        <div class="install reveal">
+            <code>npm install kotowaza</code>
+        </div>
+        <!-- Example Proverb -->
+        <div class="proverb-card reveal">
+            <div class="jp">七転び八起き</div>
+            <div class="romaji">Nanakorobi Yaoki</div>
+            <div class="meaning">"Fall seven times, stand up eight." — The spirit of never giving up.</div>
+        </div>
+        <div class="katana-divider"><span class="line"></span><span class="kanji">特徴</span><span class="line"></span>
+        </div>
+        <!-- Features -->
+        <!-- Features -->
+        <section class="reveal" id="features">
+            <h2>Features <span class="kanji-label">機能</span></h2>
+            <div class="features">
+                <div class="feature">
+                    <span class="icon">📖</span>
+                    <strong>Bilingual</strong>
+                    <p>Meanings in Indonesian &amp; English for every proverb.</p>
+                </div>
+                <div class="feature">
+                    <span class="icon">🈁</span>
+                    <strong>Complete Readings</strong>
+                    <p>Kanji, hiragana, and romaji for each entry.</p>
+                </div>
+                <div class="feature">
+                    <span class="icon">📝</span>
+                    <strong>Example Sentences</strong>
+                    <p>Real-world usage with translations.</p>
+                </div>
+                <div class="feature">
+                    <span class="icon">⚡</span>
+                    <strong>Zero Dependencies</strong>
+                    <p>Pure JSON with lightweight query helpers.</p>
+                </div>
+                <div class="feature">
+                    <span class="icon">🏷️</span>
+                    <strong>Tagged &amp; Categorized</strong>
+                    <p>Thematic tags and JLPT level metadata.</p>
+                </div>
+                <div class="feature">
+                    <span class="icon">🔍</span>
+                    <strong>Built-in Search</strong>
+                    <p>Search across Japanese, romaji, and meanings.</p>
+                </div>
+            </div>
+        </section>
+        <div class="katana-divider"><span class="line"></span><span class="kanji">始</span><span class="line"></span>
+        </div>
+        <!-- Quick Start -->
+        <!-- Quick Start -->
+        <section class="reveal" id="quick-start">
+            <h2>Quick Start <span class="kanji-label">始め方</span></h2>
+            <pre><code class="language-javascript">const kotowaza = require('kotowaza');
+// Get all proverbs
+console.log(`Loaded ${kotowaza.count()} proverbs`);
+// Look up by ID
+const entry = kotowaza.get('nanakorobi-yaoki');
+console.log(entry.japanese); // 七転び八起き
+console.log(entry.meaning.en); // No matter how many times...
+// Search across all fields
+kotowaza.search('猿'); // → entries with 猿
+kotowaza.search('monkey'); // → entries with "monkey"
+// Filter by tag or JLPT level
+kotowaza.byTag('motivation');
+kotowaza.byJlpt('N3');
+// Random proverb (great for "Quote of the Day"!)
+const daily = kotowaza.random();
+// Direct link to Jepang.org
+kotowaza.url('nanakorobi-yaoki');
+// → https://jepang.org/peribahasa/nanakorobi-yaoki/</code></pre>
+        </section>
+        <div class="katana-divider"><span class="line"></span><span class="kanji">技</span><span class="line"></span>
+        </div>
+        <!-- API Reference -->
+        <!-- API Reference -->
+        <section class="reveal" id="api">
+            <h2>API Reference <span class="kanji-label">関数一覧</span></h2>
+            <div class="api-table-wrap">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Method</th>
+                            <th>Returns</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><code>all()</code></td>
+                            <td><code>object[]</code></td>
+                            <td>All kotowaza entries</td>
+                        </tr>
+                        <tr>
+                            <td><code>get(id)</code></td>
+                            <td><code>object|null</code></td>
+                            <td>Single entry by slug ID</td>
+                        </tr>
+                        <tr>
+                            <td><code>search(query)</code></td>
+                            <td><code>object[]</code></td>
+                            <td>Search Japanese, romaji, meanings</td>
+                        </tr>
+                        <tr>
+                            <td><code>byTag(tag)</code></td>
+                            <td><code>object[]</code></td>
+                            <td>Filter by thematic tag (English)</td>
+                        </tr>
+                        <tr>
+                            <td><code>byTagId(tag)</code></td>
+                            <td><code>object[]</code></td>
+                            <td>Filter by Indonesian tag</td>
+                        </tr>
+                        <tr>
+                            <td><code>byJlpt(level)</code></td>
+                            <td><code>object[]</code></td>
+                            <td>Filter by JLPT level</td>
+                        </tr>
+                        <tr>
+                            <td><code>random()</code></td>
+                            <td><code>object</code></td>
+                            <td>One random entry</td>
+                        </tr>
+                        <tr>
+                            <td><code>count()</code></td>
+                            <td><code>number</code></td>
+                            <td>Total entries</td>
+                        </tr>
+                        <tr>
+                            <td><code>tags()</code></td>
+                            <td><code>string[]</code></td>
+                            <td>All unique English tags (sorted)</td>
+                        </tr>
+                        <tr>
+                            <td><code>tagsId()</code></td>
+                            <td><code>string[]</code></td>
+                            <td>All unique Indonesian tags (sorted)</td>
+                        </tr>
+                        <tr>
+                            <td><code>jlptLevels()</code></td>
+                            <td><code>string[]</code></td>
+                            <td>All JLPT levels in dataset</td>
+                        </tr>
+                        <tr>
+                            <td><code>url(id)</code></td>
+                            <td><code>string</code></td>
+                            <td>Full Jepang.org URL</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        <div class="katana-divider"><span class="line"></span><span class="kanji">構造</span><span class="line"></span>
+        </div>
+        <!-- Data Schema -->
+        <section class="reveal">
+            <h2>Data Schema <span class="kanji-label">データ構造</span></h2>
+            <p>Each entry follows this structure:</p>
+            <pre><code class="language-json">{
+"id": "nanakorobi-yaoki", // URL slug
+"japanese": "七転び八起き", // Original kanji
+"reading": "ななころびやおき", // Hiragana
+"romaji": "Nanakorobi Yaoki", // Romanized
+"literal": "Fall seven times...", // Literal translation
+"meaning": {
+"id": "Indonesian meaning...",
+"en": "English meaning..."
+},
+"tags": ["motivation", "numbers"],
+"tags_id": ["motivasi", "angka"],
+"jlpt": "N4",
+"equivalent": {
+"id": "Equivalent Indonesian proverb...",
+"en": "Equivalent English proverb..."
+},
+"examples": [{
+"ja": "Japanese sentence...",
+"romaji": "Romanized...",
+"id": "Indonesian translation..."
+}],
+"related": ["related-id-1"]
+}</code></pre>
+        </section>
+        <div class="katana-divider"><span class="line"></span><span class="kanji">活用</span><span class="line"></span>
+        </div>
+        <!-- Use Cases -->
+        <section class="reveal">
+            <h2>Use Cases <span class="kanji-label">活用法</span></h2>
+            <div class="use-cases">
+                <div class="use-case">
+                    <span class="uc-icon">🎓</span>
+                    <div class="uc-text">
+                        <strong>Learning Apps</strong>
+                        <span>Quiz, flashcard, and study apps</span>
+                    </div>
+                </div>
+                <div class="use-case">
+                    <span class="uc-icon">🗓️</span>
+                    <div class="uc-text">
+                        <strong>Quote of the Day</strong>
+                        <span>Daily proverb features</span>
+                    </div>
+                </div>
+                <div class="use-case">
+                    <span class="uc-icon">🤖</span>
+                    <div class="uc-text">
+                        <strong>Chatbots</strong>
+                        <span>Cultural wisdom for bots</span>
+                    </div>
+                </div>
+                <div class="use-case">
+                    <span class="uc-icon">📱</span>
+                    <div class="uc-text">
+                        <strong>Mobile Apps</strong>
+                        <span>Offline-ready JSON dataset</span>
+                    </div>
+                </div>
+                <div class="use-case">
+                    <span class="uc-icon">🔬</span>
+                    <div class="uc-text">
+                        <strong>NLP Research</strong>
+                        <span>Bilingual proverb corpus</span>
+                    </div>
+                </div>
+                <div class="use-case">
+                    <span class="uc-icon">🎮</span>
+                    <div class="uc-text">
+                        <strong>Games</strong>
+                        <span>Cultural trivia content</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="katana-divider"><span class="line"></span><span class="kanji">例</span><span class="line"></span>
+        </div>
+        <!-- Examples -->
+        <section class="reveal">
+            <h2>Examples <span class="kanji-label">実例</span></h2>
+            <h3>📅 Quote of the Day</h3>
+            <pre class="code-block"><code class="language-javascript">const kotowaza = require('kotowaza');
+// Deterministic "daily" proverb based on the date
+function getDailyProverb() {
+    const all = kotowaza.all();
+    const today = new Date();
+    const dayIndex = (today.getFullYear() * 366 + today.getMonth() * 31 + today.getDate()) % all.length;
+    return all[dayIndex];
+}
+const daily = getDailyProverb();
+console.log(`📜 ${daily.japanese}`);
+console.log(`💬 ${daily.meaning.en}`);</code></pre>
+            <h3>🌐 Express API Endpoint</h3>
+            <pre class="code-block"><code class="language-javascript">const express = require('express');
+const kotowaza = require('kotowaza');
+const app = express();
+// GET /api/proverbs?tag=motivation&jlpt=N3
+app.get('/api/proverbs', (req, res) => {
+    let results = kotowaza.all();
+    if (req.query.tag) results = kotowaza.byTag(req.query.tag);
+    if (req.query.jlpt) {
+        results = results.filter(e => e.jlpt === req.query.jlpt.toUpperCase());
+    }
+    if (req.query.q) results = kotowaza.search(req.query.q);
+    res.json({ count: results.length, data: results });
+});
+// GET /api/proverbs/random
+app.get('/api/proverbs/random', (req, res) => {
+    res.json(kotowaza.random());
+});
+// GET /api/proverbs/:id
+app.get('/api/proverbs/:id', (req, res) => {
+    const entry = kotowaza.get(req.params.id);
+    if (!entry) return res.status(404).json({ error: 'Not found' });
+    res.json(entry);
+});</code></pre>
+            <h3>🎓 JLPT Study Flashcards</h3>
+            <pre class="code-block"><code class="language-javascript">const kotowaza = require('kotowaza');
+// Build a study deck for a specific JLPT level
+function buildStudyDeck(level) {
+return kotowaza.byJlpt(level).map(entry =&gt; ({
+front: entry.japanese,
+hint: entry.reading,
+back: entry.meaning.en,
+example: entry.examples[0]?.ja,
+url: kotowaza.url(entry.id)
+}));
+}
+const n3Deck = buildStudyDeck('N3');
+console.log(`📚 ${n3Deck.length} flashcards for JLPT N3`);
+// Shuffle and quiz
+const card = n3Deck[Math.floor(Math.random() * n3Deck.length)];
+console.log(`Q: What does "${card.front}" mean?`);
+console.log(`A: ${card.back}`);</code></pre>
+            <h3>🔎 Search Autocomplete</h3>
+            <pre class="code-block"><code class="language-javascript">const kotowaza = require('kotowaza');
+// Lightweight search for autocomplete / typeahead
+function autocomplete(query) {
+if (!query || query.length &lt; 2) return [];
+return kotowaza.search(query).slice(0, 5).map(entry =&gt; ({
+id: entry.id,
+label: `${entry.japanese} (${entry.romaji})`,
+preview: entry.meaning.en.slice(0, 60) + '...'
+}));
+}
+console.log(autocomplete('fall'));
+// [{ id: 'nanakorobi-yaoki', label: '七転び八起き (Nanakorobi Yaoki)', ... }]</code></pre>
+            <h3>🤖 Discord / Slack Bot</h3>
+            <pre class="code-block"><code class="language-javascript">const kotowaza = require('kotowaza');
+// !kotowaza — random proverb
+function handleCommand(command, args) {
+if (command === '!kotowaza') {
+const entry = args[0] ? kotowaza.get(args[0]) : kotowaza.random();
+if (!entry) return '❌ Proverb not found.';
+return [
+`**${entry.japanese}** (${entry.romaji})`,
+`&gt; _${entry.meaning.en}_`,
+entry.equivalent?.en ? `🔗 Similar: "${entry.equivalent.en}"` : '',
+`📖 ${kotowaza.url(entry.id)}`
+].filter(Boolean).join('\n');
+}
+// !kotowaza-quiz — quiz mode
+if (command === '!kotowaza-quiz') {
+const entry = kotowaza.random();
+return `❓ What does **"${entry.japanese}"** mean?\n||${entry.meaning.en}||`;
+}
+}</code></pre>
+            <h3>🏗️ Static Site Generator (11ty / Hugo / Astro)</h3>
+            <pre class="code-block"><code class="language-javascript">const kotowaza = require('kotowaza');
+// Generate pages for each proverb (e.g. in 11ty .eleventy.js)
+module.exports = function(eleventyConfig) {
+eleventyConfig.addCollection('proverbs', () =&gt; {
+return kotowaza.all().map(entry =&gt; ({
+...entry,
+permalink: `/proverbs/${entry.id}/`,
+fullUrl: kotowaza.url(entry.id)
+}));
+});
+// Shortcode for embedding a random proverb
+eleventyConfig.addShortcode('randomProverb', () =&gt; {
+const p = kotowaza.random();
+return `&lt;blockquote class="kotowaza"&gt;
+&lt;p lang="ja"&gt;${p.japanese}&lt;/p&gt;
+&lt;footer&gt;${p.meaning.en}&lt;/footer&gt;
+&lt;/blockquote&gt;`;
+});
+};</code></pre>
+        </section>
+        <div class="katana-divider"><span class="line"></span><span class="kanji">分類</span><span class="line"></span>
+        </div>
+        <!-- Available Tags -->
+        <section class="reveal">
+            <h2>Available Tags <span class="kanji-label">タグ一覧</span></h2>
+<div class="breathing-grid">
+    <!-- Sorted by Frequency: life (7), numbers (3), warnings (3), animals (2), philosophy (2), others (1) -->
+    <div class="breathing-tag">
+        <span class="tag-icon">⚔️</span>
+        <span class="tag-name">life</span>
+        <span class="tag-desc">Life & Wisdom</span>
+    </div>
+    <div class="breathing-tag">
+        <span class="tag-icon">🔢</span>
+        <span class="tag-name">numbers</span>
+        <span class="tag-desc">Numbers</span>
+    </div>
+    <div class="breathing-tag">
+        <span class="tag-icon">⚠️</span>
+        <span class="tag-name">warnings</span>
+        <span class="tag-desc">Warnings</span>
+    </div>
+    <div class="breathing-tag">
+        <span class="tag-icon">🐾</span>
+        <span class="tag-name">animals</span>
+        <span class="tag-desc">Animals & Nature</span>
+    </div>
+    <div class="breathing-tag">
+        <span class="tag-icon">🧠</span>
+        <span class="tag-name">philosophy</span>
+        <span class="tag-desc">Philosophy</span>
+    </div>
+    <div class="breathing-tag">
+        <span class="tag-icon">💼</span>
+        <span class="tag-name">business</span>
+        <span class="tag-desc">Business</span>
+    </div>
+    <div class="breathing-tag">
+        <span class="tag-icon">🎌</span>
+        <span class="tag-name">culture</span>
+        <span class="tag-desc">Culture</span>
+    </div>
+    <div class="breathing-tag">
+        <span class="tag-icon">⚡</span>
+        <span class="tag-name">efficiency</span>
+        <span class="tag-desc">Efficiency</span>
+    </div>
+    <div class="breathing-tag">
+        <span class="tag-icon">🍡</span>
+        <span class="tag-name">food</span>
+        <span class="tag-desc">Food & Cuisine</span>
+    </div>
+    <div class="breathing-tag">
+        <span class="tag-icon">☯️</span>
+        <span class="tag-name">karma</span>
+        <span class="tag-desc">Consequences</span>
+    </div>
+    <div class="breathing-tag">
+        <span class="tag-icon">💰</span>
+        <span class="tag-name">money</span>
+        <span class="tag-desc">Money & Business</span>
+    </div>
+    <div class="breathing-tag">
+        <span class="tag-icon">🌟</span>
+        <span class="tag-name">motivation</span>
+        <span class="tag-desc">Motivation</span>
+    </div>
+    <div class="breathing-tag">
+        <span class="tag-icon">⏳</span>
+        <span class="tag-name">patience</span>
+        <span class="tag-desc">Patience</span>
+    </div>
+    <div class="breathing-tag">
+        <span class="tag-icon">❤️</span>
+        <span class="tag-name">relationships</span>
+        <span class="tag-desc">Relationships</span>
+    </div>
+    <div class="breathing-tag">
+        <span class="tag-icon">👥</span>
+        <span class="tag-name">social</span>
+        <span class="tag-desc">Social</span>
+    </div>
+    <div class="breathing-tag">
+        <span class="tag-icon">🎯</span>
+        <span class="tag-name">strategy</span>
+        <span class="tag-desc">Strategy & Tactics</span>
+    </div>
+</div>        </section>
+        <!-- Multi-Column Footer (Manga Colorizer Style) -->
+        <footer class="footer-wisteria">
+            <div class="footer-content">
+                <!-- Left: Branding -->
+                <div class="footer-left">
+                    <h2 class="footer-brand">ことわざ</h2>
+                    <p class="footer-tagline">Japanese Proverbs Dataset</p>
+                    <p class="footer-desc">
+                        Open source, bilingual, and production-ready.<br>
+                        Built for developers and language learners.
+                    </p>
+                    <div class="footer-breathing">全集中 — 常中</div>
+                </div>
+
+                <!-- Right: Links -->
+                <div class="footer-right">
+                    <div class="footer-col">
+                        <h3>Project</h3>
+                        <a href="https://github.com/sepTN/kotowaza" target="_blank">GitHub</a>
+                        <a href="https://www.npmjs.com/package/kotowaza" target="_blank">NPM Package</a>
+                        <a href="#api">API Reference</a>
+                        <a href="#quick-start">Quick Start</a>
+                    </div>
+                    <div class="footer-col">
+                        <h3>Ecosystem</h3>
+                        <a href="https://jepang.org" target="_blank">Jepang.org</a>
+                        <a href="https://jepang.org/peribahasa/" target="_blank">Live Demo</a>
+                        <a href="https://www.npmjs.com/package/kanji-png" target="_blank">kanji-png</a>
+                        <a href="https://github.com/sepTN/Manga-Colorizer-GUI" target="_blank">Manga GUI</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom: Copyright & Credits -->
+            <div class="footer-bottom">
+                <p>&copy; 2026 <a href="https://jepang.org">Jepang.org</a>. Released under the MIT License.</p>
+                <p>Maintained by <a href="https://jepang.org/tentang-kami/">Septian Ganendra S. K.</a></p>
+            </div>
+        </footer>
+    </div>
+    <!-- Prism.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-javascript.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-bash.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-json.min.js"></script>
+    <!-- Scroll reveal script -->
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+        // Copy to clipboard
+        document.querySelector('.install').addEventListener('click', function () {
+            const code = this.querySelector('code').innerText.replace('> ', ''); // Clean up provided > if copied by text
+            // Actually, the > is pseudo element, so innerText is just "npm install kotowaza"
+            navigator.clipboard.writeText("npm install kotowaza").then(() => {
+                this.classList.add('copied');
+                setTimeout(() => this.classList.remove('copied'), 2000);
+            });
+        });
+    </script>
+</body>
+
+</html>

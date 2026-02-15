@@ -1,0 +1,44 @@
+{
+    "name": "kotowaza",
+    "version": "1.0.0",
+    "description": "Structured JSON dataset of Japanese proverbs (kotowaza) with meanings in Indonesian & English, example sentences, JLPT levels, and tags.",
+    "homepage": "https://jepang.org/peribahasa/",
+    "funding": {
+        "type": "github",
+        "url": "https://github.com/sponsors/sepTN"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/sepTN/kotowaza.git"
+    },
+    "bugs": {
+        "url": "https://github.com/sepTN/kotowaza/issues"
+    },
+    "main": "index.js",
+    "files": [
+        "index.js",
+        "data/"
+    ],
+    "scripts": {
+        "test": "node test.js",
+        "validate": "node -e \"const k = require('.'); console.log('✅ ' + k.count() + ' entries loaded');\""
+    },
+    "keywords": [
+        "kotowaza",
+        "proverb",
+        "japanese",
+        "peribahasa",
+        "idiom",
+        "jlpt",
+        "data",
+        "jepang",
+        "indonesia",
+        "language",
+        "learning",
+        "nihongo"
+    ],
+    "author": "Septian Ganendra S. K.",
+    "license": "MIT",
+    "type": "commonjs",
+    "private": false
+}

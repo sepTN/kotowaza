@@ -1,0 +1,7 @@
+# Exclude non-essential files from the npm package
+.git
+.gitignore
+.DS_Store
+docs/
+test.js
+*.tgz

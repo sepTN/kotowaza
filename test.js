@@ -66,7 +66,7 @@ const n3 = k.byJlpt('N3');
 assert(n3.length > 0, 'finds entries for JLPT N3');
 const n3Lower = k.byJlpt('n3');
 assert(n3Lower.length > 0, 'case-insensitive JLPT level');
-assert(k.byJlpt('N5').length === 0, 'returns empty for level with no entries');
+assert(k.byJlpt('N99').length === 0, 'returns empty for level with no entries');
 
 // --- random() ---
 console.log('\n🎲 random()');

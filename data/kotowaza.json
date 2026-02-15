@@ -362,5 +362,2173 @@
             "kouin-ya-no-gotoshi",
             "saigetsu-hito-o-matazu"
         ]
+    },
+    {
+        "id": "donguri-no-sekurabe",
+        "japanese": "どんぐりの背比べ",
+        "reading": "どんぐりのせくらべ",
+        "romaji": "Donguri no Sekurabe",
+        "literal": "Comparing the height of acorns",
+        "meaning": {
+            "id": "Membanding-bandingkan sesuatu yang sebenarnya sama saja (tidak ada yang menonjol).",
+            "en": "Comparing things that are essentially the same (nothing stands out)."
+        },
+        "tags": [
+            "society",
+            "people",
+            "nature"
+        ],
+        "tags_id": [
+            "masyarakat",
+            "orang",
+            "alam"
+        ],
+        "jlpt": "N3",
+        "equivalent": {
+            "id": "Setali tiga uang.",
+            "en": "Much of a muchness. / Six of one, half a dozen of the other."
+        },
+        "examples": [
+            {
+                "ja": "誰が一番足が速いか争っているが、みんな平凡な記録でどんぐりの背比べだ。",
+                "romaji": "Dare ga ichiban ashi ga hayai ka arasotte iru ga, minna heibon na kiroku de donguri no sekurabe da.",
+                "id": "Mereka berebut ingin tahu siapa yang paling cepat larinya, padahal catatan waktu mereka semua standar. Semuanya setali tiga uang."
+            }
+        ],
+        "related": [
+            "gojuppo-hyappo"
+        ]
+    },
+    {
+        "id": "issun-saki-wa-yami",
+        "japanese": "一寸先は闇",
+        "reading": "いっすんさきはやみ",
+        "romaji": "Issun Saki wa Yami",
+        "literal": "One inch ahead is darkness",
+        "meaning": {
+            "id": "Masa depan tidak dapat diprediksi; kita tidak tahu apa yang akan terjadi di depan kita.",
+            "en": "The future is unpredictable; we do not know what will happen just ahead."
+        },
+        "tags": [
+            "life",
+            "uncertainty",
+            "warnings"
+        ],
+        "tags_id": [
+            "kehidupan",
+            "ketidakpastian",
+            "peringatan"
+        ],
+        "jlpt": "N3",
+        "equivalent": {
+            "id": "Malang tak dapat ditolak, mujur tak dapat diraih.",
+            "en": "Who can read the future?"
+        },
+        "examples": [
+            {
+                "ja": "順調に見えた事業も、突然の不況で倒産してしまった。まさに「一寸先は闇」だ。",
+                "romaji": "Junchou ni mieta jigyou mo, totsuzen no fukyou de tousan shite shimatta. Masa ni \"issun saki wa yami\" da.",
+                "id": "Bisnis yang terlihat lancar pun, karena resesi mendadak, menjadi bangkrut. Benar-benar \"satu inci ke depan adalah kegelapan\"."
+            }
+        ],
+        "related": [
+            "ashita-wa-ashita-no-kaze-ga-fuku",
+            "kafuku-wa-azanaeru-nawa-no-gotoshi"
+        ]
+    },
+    {
+        "id": "ikkyo-ryoutoku",
+        "japanese": "一挙両得",
+        "reading": "いっきょりょうとく",
+        "romaji": "Ikkyo Ryoutoku",
+        "literal": "One action, two gains",
+        "meaning": {
+            "id": "Melakukan satu usaha dan mendapatkan dua manfaat sekaligus.",
+            "en": "Killing two birds with one stone. Gaining two benefits from one action."
+        },
+        "tags": [
+            "efficiency",
+            "business",
+            "numbers"
+        ],
+        "tags_id": [
+            "efisiensi",
+            "bisnis",
+            "angka"
+        ],
+        "jlpt": "N3",
+        "equivalent": {
+            "id": "Sekali mendayung, dua tiga pulau terlampaui.",
+            "en": "Kill two birds with one stone."
+        },
+        "examples": [
+            {
+                "ja": "自転車通勤は健康にもいいし、交通費も節約できる。まさに一挙両得だ。",
+                "romaji": "Jitensha tsuukin wa kenkou ni mo ii shi, koutsuuhi mo setsuyaku dekiru. Masani ikkyo ryoutoku da.",
+                "id": "Pergi kerja naik sepeda itu bagus untuk kesehatan dan juga menghemat ongkos. Benar-benar satu tindakan dua keuntungan."
+            }
+        ],
+        "related": [
+            "isseki-nichou"
+        ]
+    },
+    {
+        "id": "mikka-bouzu",
+        "japanese": "三日坊主",
+        "reading": "みっかぼうず",
+        "romaji": "Mikka Bouzu",
+        "literal": "Three-day monk",
+        "meaning": {
+            "id": "Seseorang yang cepat menyerah atau tidak konsisten dalam melakukan sesuatu yang baru saja ia mulai.",
+            "en": "Someone who gives up easily; a quitter. Lit: A monk for (only) three days."
+        },
+        "tags": [
+            "personality",
+            "habits",
+            "numbers"
+        ],
+        "tags_id": [
+            "kepribadian",
+            "kebiasaan",
+            "angka"
+        ],
+        "jlpt": "N3",
+        "equivalent": {
+            "id": "Hangat-hangat tahi ayam.",
+            "en": "Quitter / Fickle-minded."
+        },
+        "examples": [
+            {
+                "ja": "日記を始めたが、やっぱり三日坊主で終わってしまった。",
+                "romaji": "Nikki o hajimeta ga, yappari mikka bouzu de owatte shimatta.",
+                "id": "Aku mulai menulis diari, tapi ternyata hanya bertahan sekejap (hangat-hangat tahi ayam)."
+            }
+        ],
+        "related": []
+    },
+    {
+        "id": "kame-no-kou-yori-toshi-no-kou",
+        "japanese": "亀の甲より年の功",
+        "reading": "かめのこうよりとしのこう",
+        "romaji": "Kame no Kou yori Toshi no Kou",
+        "literal": "Years of experience are worth more than a turtle's shell",
+        "meaning": {
+            "id": "Pengalaman dan kebijaksanaan orang tua sangat berharga dan patut dihormati.",
+            "en": "The wisdom of age is more valuable than the shell of a tortoise (symbol of longevity). Experience is the best teacher."
+        },
+        "tags": [
+            "wisdom",
+            "age",
+            "animals"
+        ],
+        "tags_id": [
+            "kebijaksanaan",
+            "usia",
+            "hewan"
+        ],
+        "jlpt": "N1",
+        "equivalent": {
+            "id": "Pengalaman adalah guru terbaik.",
+            "en": "Experience is the best teacher. / Years bring wisdom."
+        },
+        "examples": [
+            {
+                "ja": "おばあちゃんの知恵袋はすごい。亀の甲より年の功だね。",
+                "romaji": "Obaachan no chiebukuro wa sugoi. Kame no kou yori toshi no kou da ne.",
+                "id": "Pengetahuan Nenek luar biasa. Benar-benar pengalaman orang tua itu tak ternilai."
+            }
+        ],
+        "related": []
+    },
+    {
+        "id": "hotoke-no-kao-mo-sando",
+        "japanese": "仏の顔も三度",
+        "reading": "ほとけのかおもさんど",
+        "romaji": "Hotoke no Kao mo Sando",
+        "literal": "Even the Buddha's face, (only) three times",
+        "meaning": {
+            "id": "Sebaik-baiknya orang, jika terus-menerus diganggu atau diperlakukan buruk, akhirnya akan marah juga.",
+            "en": "Even the gentlest person will get angry if provoked repeatedly. Patience has its limits."
+        },
+        "tags": [
+            "emotion",
+            "patience",
+            "numbers"
+        ],
+        "tags_id": [
+            "emosi",
+            "kesabaran",
+            "angka"
+        ],
+        "jlpt": "N3",
+        "equivalent": {
+            "id": "Kesabaran ada batasnya.",
+            "en": "To try the patience of a saint. / Enough is enough."
+        },
+        "examples": [
+            {
+                "ja": "いつも温厚な彼も、さすがに今日は怒った。仏の顔も三度だね。",
+                "romaji": "Itsumo onkou na kare mo, sasuga ni kyou wa okotta. Hotoke no kao mo sando da ne.",
+                "id": "Dia yang biasanya kalem pun hari ini benar-benar marah. Yah, kesabaran orang memang ada batasnya."
+            }
+        ],
+        "related": [
+            "kanninbukuro-no-o-ga-kireru"
+        ]
+    },
+    {
+        "id": "ishin-denshin",
+        "japanese": "以心伝心",
+        "reading": "いしんでんしん",
+        "romaji": "Ishin Denshin",
+        "literal": "By heart, transmitting heart",
+        "meaning": {
+            "id": "Komunikasi atau pemahaman timbal balik yang terjadi tanpa menggunakan kata-kata.",
+            "en": "Telepathy; tacit understanding. Communicating from heart to heart without words."
+        },
+        "tags": [
+            "communication",
+            "relationships",
+            "yojijukugo"
+        ],
+        "tags_id": [
+            "komunikasi",
+            "hubungan",
+            "yojijukugo"
+        ],
+        "jlpt": "N3",
+        "equivalent": {
+            "id": "Dari hati ke hati.",
+            "en": "Telepathy. / Reading each other's minds."
+        },
+        "examples": [
+            {
+                "ja": "長年の親友とは、言いたいことが以心伝心でわかる。",
+                "romaji": "Naganen no shinyuu to wa, iitai koto ga ishin denshin de wakaru.",
+                "id": "Dengan sahabat lama, apa yang mau diucapkan bisa saling dimengerti secara telepati (tanpa kata-kata)."
+            }
+        ],
+        "related": [
+            "aun-no-kokyuu"
+        ]
+    },
+    {
+        "id": "kouin-ya-no-gotoshi",
+        "japanese": "光陰矢の如し",
+        "reading": "こういんやのごとし",
+        "romaji": "Kouin Ya no Gotoshi",
+        "literal": "Time is like an arrow",
+        "meaning": {
+            "id": "Waktu berjalan sangat cepat dan tidak akan pernah kembali lagi.",
+            "en": "Time flies like an arrow. Time moves swiftly and never returns."
+        },
+        "tags": [
+            "time",
+            "life",
+            "nature"
+        ],
+        "tags_id": [
+            "waktu",
+            "kehidupan",
+            "alam"
+        ],
+        "jlpt": "N3",
+        "equivalent": {
+            "id": "Waktu berjalan laksana air yang mengalir.",
+            "en": "Time flies like an arrow. / Time and tide wait for no man."
+        },
+        "examples": [
+            {
+                "ja": "小学校を卒業してからもう十年か。光陰矢の如しだね。",
+                "romaji": "Shougakkou o sotsugyou shite kara mou juunen ka. Kouin ya no gotoshi da ne.",
+                "id": "Sudah sepuluh tahun ya sejak lulus SD. Benar-benar waktu berlalu secepat anak panah."
+            }
+        ],
+        "related": [
+            "saigetsu-hito-o-matazu"
+        ]
+    },
+    {
+        "id": "katte-kabuto-no-o-o-shimeyo",
+        "japanese": "勝って兜の緒を締めよ",
+        "reading": "かってかぶとのおをしめよ",
+        "romaji": "Katte Kabuto no O o Shimeyo",
+        "literal": "Tighten your helmet strings after winning",
+        "meaning": {
+            "id": "Jangan lengah atau menjadi sombong setelah meraih kesuksesan, karena bahaya bisa datang kapan saja.",
+            "en": "Don't let your guard down after a victory. Stay alert even after success."
+        },
+        "tags": [
+            "warnings",
+            "life",
+            "war"
+        ],
+        "tags_id": [
+            "peringatan",
+            "kehidupan",
+            "perang"
+        ],
+        "jlpt": "N3",
+        "equivalent": {
+            "id": "Jangan bersorak sebelum keluar dari hutan.",
+            "en": "Don't let your guard down."
+        },
+        "examples": [
+            {
+                "ja": "試験に合格したからといって、遊んでばかりいてはいけない。勝って兜の緒を締めよだ。",
+                "romaji": "Shiken ni goukaku shita kara to itte, asonde bakari ite wa ikenai. Katte kabuto no o o shimeyo da.",
+                "id": "Hanya karena lulus ujian, jangan terus-terusan bermain. Ingat, setelah menang harus tetap waspada."
+            }
+        ],
+        "related": [
+            "yudan-taiteki"
+        ]
+    },
+    {
+        "id": "juunin-toiro",
+        "japanese": "十人十色",
+        "reading": "じゅうにんといろ",
+        "romaji": "Juunin Toiro",
+        "literal": "Ten people, ten colors",
+        "meaning": {
+            "id": "Setiap orang memiliki pemikiran, selera, dan kepribadian yang berbeda-beda.",
+            "en": "So many men, so many minds. Everyone has their own tastes and opinions."
+        },
+        "tags": [
+            "people",
+            "personality",
+            "yojijukugo"
+        ],
+        "tags_id": [
+            "orang",
+            "kepribadian",
+            "yojijukugo"
+        ],
+        "jlpt": "N4",
+        "equivalent": {
+            "id": "Lain kepala, lain pikiran.",
+            "en": "To each his own. / Different strokes for different folks."
+        },
+        "examples": [
+            {
+                "ja": "何を好きになるかは十人十色だから、無理に意見を押し付けてはいけない。",
+                "romaji": "Nani o suki ni naru ka wa juunin toiro dakara, muri ni iken o oshitsukete wa ikenai.",
+                "id": "Karena apa yang disukai orang itu berbeda-beda, kita tidak boleh memaksakan pendapat kita."
+            }
+        ],
+        "related": [
+            "sensa-banbetsu"
+        ]
+    },
+    {
+        "id": "kuchi-wa-wazawai-no-moto",
+        "japanese": "口は災いのもと",
+        "reading": "くちはわざわいのもと",
+        "romaji": "Kuchi wa Wazawai no Moto",
+        "literal": "The mouth is the source of disaster",
+        "meaning": {
+            "id": "Ucapan yang tidak dipikirkan dengan matang dapat mendatangkan bencana atau masalah bagi diri sendiri.",
+            "en": "Out of the mouth comes evil. Careless speech can be the source of disaster."
+        },
+        "tags": [
+            "communication",
+            "warnings",
+            "life"
+        ],
+        "tags_id": [
+            "komunikasi",
+            "peringatan",
+            "kehidupan"
+        ],
+        "jlpt": "N3",
+        "equivalent": {
+            "id": "Mulutmu harimau mu.",
+            "en": "Out of the mouth comes evil. / The tongue is the enemy of the neck."
+        },
+        "examples": [
+            {
+                "ja": "同僚の悪口を言っていたら、本人に聞かれてしまった。まさに「口は災いのもと」だ。",
+                "romaji": "Douryou no warukuchi o itteita ra, honnin ni kikarete shimatta. Masa ni \"kuchi wa wazawai no moto\" da.",
+                "id": "Ketika saya berbicara buruk tentang rekan kerja, ternyata didengar oleh orangnya langsung. Benar-benar \"mulut adalah sumber bencana\"."
+            }
+        ],
+        "related": [
+            "kiji-mo-nakazuba-utaremai",
+            "chinmoku-wa-kin",
+            "iwanu-ga-hana"
+        ]
+    },
+    {
+        "id": "zen-wa-isoge",
+        "japanese": "善は急げ",
+        "reading": "ぜんはいそげ",
+        "romaji": "Zen wa Isoge",
+        "literal": "Be quick to do good",
+        "meaning": {
+            "id": "Segeralah lakukan hal-hal baik. Jangan menunda niat baik.",
+            "en": "Strike while the iron is hot. Be quick to do good."
+        },
+        "tags": [
+            "morals",
+            "action",
+            "time"
+        ],
+        "tags_id": [
+            "moral",
+            "tindakan",
+            "waktu"
+        ],
+        "jlpt": "N4",
+        "equivalent": {
+            "id": "Niat baik harus disegerakan.",
+            "en": "Strike while the iron is hot. / There is no time like the present."
+        },
+        "examples": [
+            {
+                "ja": "留学をしたいなら、今すぐ準備を始めましょう。善は急げと言うでしょう。",
+                "romaji": "Ryuugaku o shitai nara, ima sugu junbi o hajimemashou. Zen wa isoge to iu deshou.",
+                "id": "Jika ingin sekolah ke luar negeri, mulailah bersiap sekarang juga. Bukankah ada pepatah \"segerakanlah hal yang baik\"?"
+            }
+        ],
+        "related": [
+            "omoitatta-ga-kichijitsu"
+        ]
+    },
+    {
+        "id": "usotsuki-wa-dorobou-no-hajimari",
+        "japanese": "嘘つきは泥棒のはじまり",
+        "reading": "うそつきはどろぼうのはじまり",
+        "romaji": "Usotsuki wa Dorobou no Hajimari",
+        "literal": "A liar is the beginning of a thief",
+        "meaning": {
+            "id": "Berbohong adalah langkah awal menuju kejahatan yang lebih besar (mencuri).",
+            "en": "Lying leads to stealing. He that will lie will steal."
+        },
+        "tags": [
+            "honesty",
+            "education",
+            "warnings"
+        ],
+        "tags_id": [
+            "kejujuran",
+            "pendidikan",
+            "peringatan"
+        ],
+        "jlpt": "N4",
+        "equivalent": {
+            "id": "Pembohong adalah bibit pencuri.",
+            "en": "He that will lie will steal."
+        },
+        "examples": [
+            {
+                "ja": "お母さんはいつも「嘘つきは泥棒のはじまり」と言って、僕を𠮟った。",
+                "romaji": "Okaasan wa itsumo \"Usotsuki wa dorobou no hajimari\" to itte, boku o shikatta.",
+                "id": "Ibu selalu memarahiku dengan berkata, \"Berbohong adalah awal dari mencuri.\""
+            }
+        ],
+        "related": [
+            "ari-no-ana-kara-tsutsumi-mo-kuzureru"
+        ]
+    },
+    {
+        "id": "uso-mo-houben",
+        "japanese": "嘘も方便",
+        "reading": "うそもほうべん",
+        "romaji": "Uso mo Houben",
+        "literal": "Even a lie is a means (expedient)",
+        "meaning": {
+            "id": "Berbohong demi kebaikan. Kebohongan diperlukan dalam situasi tertentu untuk tujuan baik.",
+            "en": "A white lie. Circumstances may justify a lie."
+        },
+        "tags": [
+            "communication",
+            "wisdom",
+            "life"
+        ],
+        "tags_id": [
+            "komunikasi",
+            "kebijaksanaan",
+            "kehidupan"
+        ],
+        "jlpt": "N3",
+        "equivalent": {
+            "id": "Demi kebaikan (White lie).",
+            "en": "The end justifies the means. / White lie."
+        },
+        "examples": [
+            {
+                "ja": "本当のことを言って彼女を傷つけるよりはいい。嘘も方便だよ。",
+                "romaji": "Hontou no koto o itte kanojo o kizutsukeru yori wa ii. Uso mo houben da yo.",
+                "id": "Lebih baik daripada mengatakan yang sebenarnya lalu menyakitinya. Berbohong demi kebaikan itu perlu."
+            }
+        ],
+        "related": [
+            "hitsuyou-na-aku"
+        ]
+    },
+    {
+        "id": "chiri-mo-tsumoreba-yama-to-naru",
+        "japanese": "塵も積もれば山となる",
+        "reading": "ちりもつもればやまとなる",
+        "romaji": "Chiri mo Tsumoreba Yama to Naru",
+        "literal": "Even dust, if piled up, becomes a mountain",
+        "meaning": {
+            "id": "Usaha kecil yang dilakukan secara konsisten akan menghasilkan hasil yang besar.",
+            "en": "Many a little makes a mickle. Accumulating small things results in something huge."
+        },
+        "tags": [
+            "diligence",
+            "hard_work",
+            "nature"
+        ],
+        "tags_id": [
+            "ketekunan",
+            "kerja_keras",
+            "alam"
+        ],
+        "jlpt": "N3",
+        "equivalent": {
+            "id": "Sedikit demi sedikit, lama-lama menjadi bukit.",
+            "en": "Many a little makes a mickle. / Rome wasn't built in a day."
+        },
+        "examples": [
+            {
+                "ja": "毎日100円ずつ貯金すれば、塵も積もれば山となるで、一年で３万円になる。",
+                "romaji": "Mainichi hyaku en zutsu chokin sureba, chiri mo tsumoreba yama to naru de, ichinen de sanman en ni naru.",
+                "id": "Kalau menabung 100 yen setiap hari, sesuai debu yang menumpuk jadi gunung, dalam setahun akan menjadi 30.000 yen."
+            }
+        ],
+        "related": [
+            "amadare-ishi-o-ugatsu",
+            "senri-no-michi-mo-ippo-kara",
+            "keizoku-wa-chikara-nari"
+        ]
+    },
+    {
+        "id": "shippai-wa-seikou-no-moto",
+        "japanese": "失敗は成功のもと",
+        "reading": "しっぱいはせいこうのもと",
+        "romaji": "Shippai wa Seikou no Moto",
+        "literal": "Failure is the foundation of success",
+        "meaning": {
+            "id": "Kegagalan adalah awal dari keberhasilan. Belajar dari kesalahan membawa kesuksesan.",
+            "en": "Failure is the stepping stone to success."
+        },
+        "tags": [
+            "motivation",
+            "business",
+            "life"
+        ],
+        "tags_id": [
+            "motivasi",
+            "bisnis",
+            "kehidupan"
+        ],
+        "jlpt": "N3",
+        "equivalent": {
+            "id": "Kegagalan adalah guru terbaik.",
+            "en": "Failure is the mother of success."
+        },
+        "examples": [
+            {
+                "ja": "あの発明家は何度も失敗を重ねたが、ついに世界的な発明を成し遂げた。まさに「失敗は成功のもと」だ。",
+                "romaji": "Ano hatsumeika wa nando mo shippai o kasaneta ga, tsuini sekaiteki na hatsumei o nashitogeta. Masa ni \"shippai wa seikou no moto\" da.",
+                "id": "Penemu itu berkali-kali mengalami kegagalan, tetapi akhirnya berhasil menciptakan penemuan kelas dunia. Benar-benar \"kegagalan adalah fondasi kesuksesan\"."
+            }
+        ],
+        "related": [
+            "shippai-wa-seikou-no-haha",
+            "nanakorobi-yaoki",
+            "ame-futte-ji-katamaru"
+        ]
+    },
+    {
+        "id": "suki-koso-mono-no-jouzu-nare",
+        "japanese": "好きこそ物の上手なれ",
+        "reading": "すきこそもののじょうずなれ",
+        "romaji": "Suki Koso Mono no Jouzu Nare",
+        "literal": "Liking something is the best way to become skillful at it",
+        "meaning": {
+            "id": "Jika menyukai sesuatu, pasti akan cepat mahir.",
+            "en": "What one likes, one does well. Love makes one fit for any work."
+        },
+        "tags": [
+            "learning",
+            "hobbies",
+            "improvement"
+        ],
+        "tags_id": [
+            "belajar",
+            "hobi",
+            "improvisasi"
+        ],
+        "jlpt": "N4",
+        "equivalent": {
+            "id": "Minat membawa bakat.",
+            "en": "What one likes, one does well."
+        },
+        "examples": [
+            {
+                "ja": "アニメが好きで見ているうちに、日本語がペラペラになった。好きこそ物の上手なれだね。",
+                "romaji": "Anime ga suki de mite iru uchi ni, Nihongo ga perapera ni natta. Suki koso mono no jouzu nare da ne.",
+                "id": "Karena suka nonton anime, tahu-tahu bahasa Jepang-ku jadi lancar. Benar-benar, kalau sudah suka pasti jadi mahir."
+            }
+        ],
+        "related": [
+            "michi-wa-konomu-tokoro-ni-chikashi"
+        ]
+    },
+    {
+        "id": "yasumonogai-no-zeniushinai",
+        "japanese": "安物買いの銭失い",
+        "reading": "やすものがいのぜにうしない",
+        "romaji": "Yasumonogai no Zeniushinai",
+        "literal": "Buying cheap, losing money",
+        "meaning": {
+            "id": "Membeli barang murah justru bisa membuat rugi (karena cepat rusak).",
+            "en": "Penny wise and pound foolish. Breaking the bank by buying cheap."
+        },
+        "tags": [
+            "economy",
+            "business",
+            "money"
+        ],
+        "tags_id": [
+            "ekonomi",
+            "bisnis",
+            "uang"
+        ],
+        "jlpt": "N3",
+        "equivalent": {
+            "id": "Murah itu mahal.",
+            "en": "Cheap is dear. / Penny wise, pound foolish."
+        },
+        "examples": [
+            {
+                "ja": "安いパソコンを買ったが、すぐに壊れて修理代が高くついた。まさに安物買いの銭失いだ。",
+                "romaji": "Yasui pasokon o katta ga, sugu ni kowarete shuuridai ga takaku tsuita. Masani yasumonogai no zeniushinai da.",
+                "id": "Saya membeli laptop murah, tapi langsung rusak dan biaya servisnya mahal. Benar-benar \"beli barang murah malah rugi uang\"."
+            }
+        ],
+        "related": [
+            "yasukarou-warukarou"
+        ]
+    },
+    {
+        "id": "koubou-mo-fude-no-ayamari",
+        "japanese": "弘法も筆の誤まり",
+        "reading": "こうぼうもふでのあやまり",
+        "romaji": "Koubou mo Fude no Ayamari",
+        "literal": "Even Koubou (famous calligrapher) makes mistakes with his brush",
+        "meaning": {
+            "id": "Bahkan ahli pun bisa melakukan kesalahan.",
+            "en": "Even experts make mistakes. Even Homer sometimes nods."
+        },
+        "tags": [
+            "mistake",
+            "forgiveness",
+            "expert"
+        ],
+        "tags_id": [
+            "kesalahan",
+            "pengampunan",
+            "ahli"
+        ],
+        "jlpt": "N3",
+        "equivalent": {
+            "id": "Tak ada gading yang tak retak.",
+            "en": "Even Homer sometimes nods. / To err is human."
+        },
+        "examples": [
+            {
+                "ja": "あのベテラン医者も診断を間違えた。弘法も筆の誤まりだね。",
+                "romaji": "Ano beteran isha mo shindan wo machigaeta. Koubou mo fude no ayamari da ne.",
+                "id": "Bahkan dokter veteran itu pun salah diagnosis. Benar-benar Koubou pun bisa salah ya."
+            }
+        ],
+        "related": [
+            "saru-mo-ki-kara-ochiru",
+            "kappa-no-kawanagare"
+        ]
+    },
+    {
+        "id": "koukai-saki-ni-tatazu",
+        "japanese": "後悔先に立たず",
+        "reading": "こうかいさきにたたず",
+        "romaji": "Koukai Saki ni Tatazu",
+        "literal": "Regret does not stand first",
+        "meaning": {
+            "id": "Penyesalan selalu datang terlambat. Mengeluh setelah terjadi tidak ada gunanya.",
+            "en": "Repentance comes too late. It is no use crying over spilt milk."
+        },
+        "tags": [
+            "regret",
+            "time",
+            "warnings"
+        ],
+        "tags_id": [
+            "penyesalan",
+            "waktu",
+            "peringatan"
+        ],
+        "jlpt": "N3",
+        "equivalent": {
+            "id": "Sesal dahulu pendapatan, sesal kemudian tidak berguna.",
+            "en": "Don't cry over spilt milk. / Repentance comes too late."
+        },
+        "examples": [
+            {
+                "ja": "あの時もっと勉強しておけばよかったと言っても、後悔先に立たずだ。",
+                "romaji": "Ano toki motto benkyou shite okeba yokatta to itte mo, koukai saki ni tatazu da.",
+                "id": "Meskipun bilang \"andaikan dulu aku belajar lebih giat\", penyesalan selalu terlambat (percuma sekarang)."
+            }
+        ],
+        "related": [
+            "fukusui-bon-ni-kaerazu"
+        ]
+    },
+    {
+        "id": "nito-o-ou-mono-wa-itto-mo-ezu",
+        "japanese": "二兎を追う者は一兎をも得ず",
+        "reading": "にとをおうものはitともえず",
+        "romaji": "Nito o Ou Mono wa Itto mo Ezu",
+        "literal": "He who chases two hares catches neither",
+        "meaning": {
+            "id": "Jika Anda mencoba melakukan dua hal besar secara bersamaan, kemungkinan besar keduanya akan gagal.",
+            "en": "If you run after two hares, you will catch neither. Grasp all, lose all."
+        },
+        "tags": [
+            "warnings",
+            "focus",
+            "action"
+        ],
+        "tags_id": [
+            "peringatan",
+            "fokus",
+            "tindakan"
+        ],
+        "jlpt": "N3",
+        "equivalent": {
+            "id": "Mengejar dua kelinci tak dapat satu pun.",
+            "en": "If you run after two hares, you will catch neither."
+        },
+        "examples": [
+            {
+                "ja": "英語と中国語を同時に学ぼうとしたが、どちらも中途半端になった。二兎を追う者は一兎をも得ずだね。",
+                "romaji": "Eigo to Chuugokugo o douji ni manabou to shita ga, dochira mo chuutohanpa ni natta. Nito o ou mono wa itto mo ezu da ne.",
+                "id": "Aku mencoba belajar bahasa Inggris dan Mandarin secara bersamaan, tapi keduanya jadi tidak maksimal. Benar-benar \"mengejar dua kelinci tak dapat satu pun\"."
+            }
+        ],
+        "related": [
+            "ikkyo-ryoutoku"
+        ]
+    },
+    {
+        "id": "nido-aru-koto-wa-sando-aru",
+        "japanese": "二度あることは三度ある",
+        "reading": "にどあることはさんどある",
+        "romaji": "Nido Aru Koto wa Sando Aru",
+        "literal": "What happens twice will happen three times",
+        "meaning": {
+            "id": "Hal yang terjadi dua kali, kemungkinan besar akan terjadi lagi untuk ketiga kalinya.",
+            "en": "What happens twice will happen three times. History repeats itself."
+        },
+        "tags": [
+            "warnings",
+            "luck",
+            "fate"
+        ],
+        "tags_id": [
+            "peringatan",
+            "keberuntungan",
+            "nasib"
+        ],
+        "jlpt": "N4",
+        "equivalent": {
+            "id": "Kejadian berulang.",
+            "en": "It never rains but it pours. / Things come in threes."
+        },
+        "examples": [
+            {
+                "ja": "財布を落としたばかりなのに、今度は携帯を無くした。二度あることは三度あるというから、気をつけよう。",
+                "romaji": "Saifu o otoshita bakari na noni, kondo wa keitai o nakushita. Nido aru koto wa sando aru to iu kara, ki o tsukeyou.",
+                "id": "Baru saja dompet jatuh, sekarang HP hilang. Karena katanya apa yang terjadi dua kali bakal terjadi tiga kali, aku harus lebih hati-hati."
+            }
+        ],
+        "related": [
+            "sandome-no-shoujiki"
+        ]
+    },
+    {
+        "id": "gojuppo-hyakupo",
+        "japanese": "五十歩百歩",
+        "reading": "ごじゅっぽひゃっぽ",
+        "romaji": "Gojuppo Hyappo",
+        "literal": "Fifty steps or a hundred steps",
+        "meaning": {
+            "id": "Sama buruknya, tidak ada perbedaan yang berarti. (Menertawakan kesalahan orang lain yang tak jauh beda dengan kesalahan diri sendiri).",
+            "en": "Six of one, half a dozen of the other. The pot calling the kettle black."
+        },
+        "tags": [
+            "numbers",
+            "comparison",
+            "yojijukugo"
+        ],
+        "tags_id": [
+            "angka",
+            "perbandingan",
+            "yojijukugo"
+        ],
+        "jlpt": "N3",
+        "equivalent": {
+            "id": "Sebelas dua belas. / Panci menyebut ketel hitam.",
+            "en": "The pot calling the kettle black."
+        },
+        "examples": [
+            {
+                "ja": "彼が遅刻を批判しているけど、自分もいつも遅れてくるから五十歩百歩だ。",
+                "romaji": "Kare ga chikoku o hihan shite iru kedo, jibun mo itsumo okurete kuru kara gojuppo hyakupo da.",
+                "id": "Dia mengkritik keterlambatan orang lain, tapi dirinya sendiri juga selalu terlambat. Sama saja buruknya."
+            }
+        ],
+        "related": [
+            "mekuso-hanakuso-o-warau",
+            "donguri-no-sekurabe"
+        ]
+    },
+    {
+        "id": "i-no-naka-no-kawazu",
+        "japanese": "井の中の蛙",
+        "reading": "いのなかのかわず",
+        "romaji": "I no Naka no Kawazu",
+        "literal": "A frog in a well",
+        "meaning": {
+            "id": "Seseorang yang wawasannya sempit dan tidak tahu dunia luar, tetapi sombong.",
+            "en": "A frog in a well knows nothing of the great ocean. Parochialism."
+        },
+        "tags": [
+            "animals",
+            "life",
+            "wisdom"
+        ],
+        "tags_id": [
+            "hewan",
+            "kehidupan",
+            "kebijaksanaan"
+        ],
+        "jlpt": "N3",
+        "equivalent": {
+            "id": "Katak dalam tempurung.",
+            "en": "He that stays in the valley shall never get over the hill."
+        },
+        "examples": [
+            {
+                "ja": "地元の大会で優勝して得意になっていたが、全国大会では井の中の蛙だったと思い知らされた。",
+                "romaji": "Jimoto no taikai de yuushou shite tokui ni natte ita ga, zenkoku taikai de wa i no naka no kawazu datta to omoishirasareta.",
+                "id": "Aku bangga setelah menang di turnamen lokal, tapi di turnamen nasional aku disadarkan bahwa aku hanyalah \"katak dalam sumur\"."
+            }
+        ],
+        "related": [
+            "natsu-no-mushi-koori-o-warau"
+        ]
+    },
+    {
+        "id": "hito-no-furi-mite-waga-furi-naose",
+        "japanese": "人のふり見てわがふり直せ",
+        "reading": "ひとのふりみてわがふりなおせ",
+        "romaji": "Hito no Furi Mite Waga Furi Naose",
+        "literal": "Watch others' behavior and correct your own",
+        "meaning": {
+            "id": "Lihatlah perilaku orang lain, lalu perbaiki perilaku diri sendiri. Belajar dari kesalahan orang lain.",
+            "en": "Learn from other people's mistakes. One man's fault is another's lesson."
+        },
+        "tags": [
+            "learning",
+            "introspection",
+            "behavior"
+        ],
+        "tags_id": [
+            "belajar",
+            "introspeksi",
+            "perilaku"
+        ],
+        "jlpt": "N3",
+        "equivalent": {
+            "id": "Ambil pelajaran dari kesalahan orang lain.",
+            "en": "Learn from other people's mistakes."
+        },
+        "examples": [
+            {
+                "ja": "彼の乱暴な言葉遣いを聞いて、人のふり見てわがふり直せだと思った。",
+                "romaji": "Kare no ranbou na kotobadzukai o kiite, hito no furi mite waga furi naose da to omotta.",
+                "id": "Mendengar cara bicaranya yang kasar, aku merasa harus bercermin dan menjaga cara bicaraku sendiri."
+            }
+        ],
+        "related": [
+            "tazan-no-ishi",
+            "hanmen-kyoushi"
+        ]
+    },
+    {
+        "id": "isogaba-maware",
+        "japanese": "急がば回れ",
+        "reading": "いそがばまわれ",
+        "romaji": "Isogaba Maware",
+        "literal": "If you are in a hurry, go the long way around",
+        "meaning": {
+            "id": "Jika terburu-buru, lebih baik pilih jalan aman meski memutar daripada jalan pintas yang berisiko.",
+            "en": "Make haste slowly. More haste, less speed."
+        },
+        "tags": [
+            "time",
+            "life",
+            "wisdom"
+        ],
+        "tags_id": [
+            "waktu",
+            "kehidupan",
+            "kebijaksanaan"
+        ],
+        "jlpt": "N3",
+        "equivalent": {
+            "id": "Biar lambat asal selamat.",
+            "en": "The longest way round is the nearest way home."
+        },
+        "examples": [
+            {
+                "ja": "高速道路が渋滞しているなら、下道を行こう。急がば回れだ。",
+                "romaji": "Kousokudouro ga juutai shite iru nara, shitamichi o ikou. Isogaba maware da.",
+                "id": "Kalau jalan tol macet, ayo lewat jalan biasa saja. \"Isogaba maware\" (kadang jalan biasa lebih cepat saat macet)."
+            }
+        ],
+        "related": [
+            "seite-wa-koto-o-shisonjiru"
+        ]
+    },
+    {
+        "id": "nasake-wa-hito-no-tame-narazu",
+        "japanese": "情けは人のためならず",
+        "reading": "なさけはひとのためならず",
+        "romaji": "Nasake wa Hito no Tame Narazu",
+        "literal": "Compassion is not (only) for others",
+        "meaning": {
+            "id": "Berbuat baik kepada orang lain pada akhirnya akan membawa kebaikan kembali kepada diri kita sendiri.",
+            "en": "Kindness is its own reward. A good turn deserves another."
+        },
+        "tags": [
+            "morals",
+            "relations",
+            "karma"
+        ],
+        "tags_id": [
+            "moral",
+            "hubungan",
+            "karma"
+        ],
+        "jlpt": "N3",
+        "equivalent": {
+            "id": "Apa yang kita tanam, itulah yang kita tuai.",
+            "en": "What goes around comes around."
+        },
+        "examples": [
+            {
+                "ja": "困っている人を助けるのは、いつか自分に返ってくる。情けは人のためならずだよ。",
+                "romaji": "Komatte iru hito o tasukeru no wa, itsuka jibun ni kaette kuru. Nasake wa hito no tame narazu da yo.",
+                "id": "Membantu orang yang kesulitan itu nanti akan kembali ke diri kita sendiri. Kebaikan itu bukan cuma buat orang lain, tapi buat kita juga."
+            }
+        ],
+        "related": [
+            "zenin-zenka"
+        ]
+    },
+    {
+        "id": "toranu-tanuki-no-kawazanyou",
+        "japanese": "捕らぬ狸の皮算用",
+        "reading": "とらぬたぬきのかわざんよう",
+        "romaji": "Toranu Tanuki no Kawazanyou",
+        "literal": "Counting the skins of badgers (tanuki) not yet caught",
+        "meaning": {
+            "id": "Mengharapkan keuntungan dari sesuatu yang belum pasti didapatkan. Berangan-angan terlalu jauh.",
+            "en": "Don't count your chickens before they hatch."
+        },
+        "tags": [
+            "hope",
+            "failure",
+            "planning"
+        ],
+        "tags_id": [
+            "harapan",
+            "kegagalan",
+            "perencanaan"
+        ],
+        "jlpt": "N3",
+        "equivalent": {
+            "id": "Menghitung anak ayam sebelum menetas.",
+            "en": "First catch your hare."
+        },
+        "examples": [
+            {
+                "ja": "宝くじが当たったらどうするか話し合うなんて、捕らぬ狸の皮算用だ。",
+                "romaji": "Takarakuji ga atattara dou suru ka hanashiau nante, toranu tanuki no kawazanyou da.",
+                "id": "Membicarakan mau diapakan uang lotre kalau menang, itu namanya menghitung kulit tanuki sebelum ditangkap."
+            }
+        ],
+        "related": [
+            "e-ni-kaita-mochi"
+        ]
+    },
+    {
+        "id": "son-shite-toku-tore",
+        "japanese": "損して得取れ",
+        "reading": "そんしてとくとれ",
+        "romaji": "Son shite Toku Tore",
+        "literal": "Lose now to gain later",
+        "meaning": {
+            "id": "Terimalah kerugian (sekarang) untuk mendapatkan keuntungan (nanti).",
+            "en": "Lose a fly to catch a trout. Give a sprat to catch a mackerel."
+        },
+        "tags": [
+            "business",
+            "strategy",
+            "patience"
+        ],
+        "tags_id": [
+            "bisnis",
+            "strategi",
+            "kesabaran"
+        ],
+        "jlpt": "N3",
+        "equivalent": {
+            "id": "Rugi dulu untung kemudian (Investasi).",
+            "en": "Penny wise, pound foolish (opposite concept)."
+        },
+        "examples": [
+            {
+                "ja": "今は赤字だが、広告費に投資するべきだ。損して得取れというからね。",
+                "romaji": "Ima wa akaji daga, koukokuhi ni toushi suru beki da. Son shite toku tore to iu kara ne.",
+                "id": "Sekarang memang sedang rugi (defisit), tapi kita harus berinvestasi pada biaya iklan. Karena ada pepatah \"rugi dulu untuk untung kemudian\"."
+            }
+        ],
+        "related": [
+            "niku-o-kirasete-hone-o-tatsu"
+        ]
+    },
+    {
+        "id": "hayaoki-wa-sanmon-no-toku",
+        "japanese": "早起きは三文の徳",
+        "reading": "はやおきはさんもんのとく",
+        "romaji": "Hayaoki wa Sanmon no Toku",
+        "literal": "Early rising is worth three mon (pennies)",
+        "meaning": {
+            "id": "Bangun pagi memberikan keuntungan, sekecil apapun itu.",
+            "en": "The early bird catches the worm."
+        },
+        "tags": [
+            "habits",
+            "health",
+            "success"
+        ],
+        "tags_id": [
+            "kebiasaan",
+            "kesehatan",
+            "kesuksesan"
+        ],
+        "jlpt": "N5",
+        "equivalent": {
+            "id": "Rejeki dipatok ayam (jika bangun siang).",
+            "en": "Early to bed and early to rise makes a man healthy, wealthy, and wise."
+        },
+        "examples": [
+            {
+                "ja": "早起きして勉強したら捗った。早起きは三文の徳だね。",
+                "romaji": "Hayaoki shite benkyou shitara hakadotta. Hayaoki wa sanmon no toku da ne.",
+                "id": "Bangun pagi buat belajar ternyata efektif banget. Benar kata pepatah, bangun pagi banyak rejekinya."
+            }
+        ],
+        "related": [
+            "asa-no-ame-to-onna-no-udemakuri"
+        ]
+    },
+    {
+        "id": "shu-ni-majiwareba-akaku-naru",
+        "japanese": "朱に交われば赤くなる",
+        "reading": "しゅにまじわればあかくなる",
+        "romaji": "Shu ni Majiwareba Akaku Naru",
+        "literal": "If you mix with vermilion, you become red",
+        "meaning": {
+            "id": "Jika bergaul dengan gincu merah, akan ikut menjadi merah. Seseorang akan sangat mudah terpengaruh oleh lingkungan atau teman-temannya.",
+            "en": "He who touches pitch shall be defiled therewith. You become who you surround yourself with."
+        },
+        "tags": [
+            "environment",
+            "influence",
+            "friends"
+        ],
+        "tags_id": [
+            "lingkungan",
+            "pengaruh",
+            "pertemanan"
+        ],
+        "jlpt": "N3",
+        "equivalent": {
+            "id": "Berteman dengan penjual minyak wangi akan ikut wangi.",
+            "en": "You are what you eat."
+        },
+        "examples": [
+            {
+                "ja": "彼は悪い仲間と付き合って変わってしまった。朱に交われば赤くなるだ。",
+                "romaji": "Kare wa warui nakama to tsukiatte kawatte shimatta. Shu ni majiwareba akaku naru da.",
+                "id": "Dia berubah karena bergaul dengan teman-teman yang buruk. Benar-benar \"dekat merah jadi ikut merah\"."
+            }
+        ],
+        "related": [
+            "rui-wa-tomo-o-yobu"
+        ]
+    },
+    {
+        "id": "kahou-wa-nete-mate",
+        "japanese": "果報は寝て待て",
+        "reading": "かほうはねてまて",
+        "romaji": "Kahou wa Nete Mate",
+        "literal": "Wait for good news while sleeping",
+        "meaning": {
+            "id": "Keberuntungan itu sebaiknya ditunggu sambil tidur. Nasib baik tidak bisa dipaksakan, tunggulah dengan sabar setelah berusaha.",
+            "en": "Everything comes to him who waits. Sleep and wait for good luck."
+        },
+        "tags": [
+            "luck",
+            "patience",
+            "fate"
+        ],
+        "tags_id": [
+            "keberuntungan",
+            "kesabaran",
+            "nasib"
+        ],
+        "jlpt": "N3",
+        "equivalent": {
+            "id": "Indah pada waktunya.",
+            "en": "Wait for the tide to turn."
+        },
+        "examples": [
+            {
+                "ja": "やれることは全部やったんだから、あとは果報は寝て待てだよ。",
+                "romaji": "Yareru koto wa zenbu yatta nda kara, ato wa kahou wa nete mate da yo.",
+                "id": "Kamu sudah melakukan semua yang kamu bisa, sisanya tunggu saja nasib baik dengan tenang."
+            }
+        ],
+        "related": [
+            "jinji-o-tsukushite-tenmei-o-matsu"
+        ]
+    },
+    {
+        "id": "anzuru-yori-umu-ga-yasushi",
+        "japanese": "案ずるより産むが易し",
+        "reading": "あんずるよりうむがやすし",
+        "romaji": "Anzuru Yori Umu ga Yasushi",
+        "literal": "Giving birth is easier than worrying about it",
+        "meaning": {
+            "id": "Melahirkan itu ternyata lebih mudah daripada mengkhawatirkannya. Ketakutan sebelum mencoba biasanya berlebihan.",
+            "en": "Fear is often greater than the danger. The attempt is all."
+        },
+        "tags": [
+            "anxiety",
+            "action",
+            "courage"
+        ],
+        "tags_id": [
+            "kecemasan",
+            "tindakan",
+            "keberanian"
+        ],
+        "jlpt": "N3",
+        "equivalent": {
+            "id": "Ketakutan yang tak beralasan.",
+            "en": "To cross the bridge when one comes to it."
+        },
+        "examples": [
+            {
+                "ja": "試験が不安だったが、やってみたら案外と簡単だった。案ずるより産むが易しだ。",
+                "romaji": "Shiken ga fuan datta ga, yatte mitara igai to kantan datta. Anzuru yori umu ga yasushi da.",
+                "id": "Aku cemas soal ujian, tapi pas dikerjakan ternyata gampang. Benar-benar lebih mudah dijalani daripada dipikirkan."
+            }
+        ],
+        "related": [
+            "atatte-kudakero"
+        ]
+    },
+    {
+        "id": "tana-kara-botamochi",
+        "japanese": "棚からぼた餅",
+        "reading": "たなからぼたもち",
+        "romaji": "Tana Kara Botamochi",
+        "literal": "Botamochi rice cake from the shelf",
+        "meaning": {
+            "id": "Mendapatkan keberuntungan besar secara tiba-tiba tanpa berusaha. Rezeki nomplok.",
+            "en": "A windfall. Pennies from heaven."
+        },
+        "tags": [
+            "luck",
+            "food",
+            "fortune"
+        ],
+        "tags_id": [
+            "keberuntungan",
+            "makanan",
+            "rezeki"
+        ],
+        "jlpt": "N3",
+        "equivalent": {
+            "id": "Mendapat durian runtuh.",
+            "en": "To be born with a silver spoon in one's mouth."
+        },
+        "examples": [
+            {
+                "ja": "宝くじが当たったなんて、まさに棚からぼた餅だ。",
+                "romaji": "Takarakuji ga atatta nante, masani tana kara botamochi da.",
+                "id": "Menang lotre itu benar-benar seperti mendapat durian runtuh."
+            }
+        ],
+        "related": [
+            "aita-kuchi-e-botamochi"
+        ]
+    },
+    {
+        "id": "saigetsu-hito-o-matazu",
+        "japanese": "歳月人を待たず",
+        "reading": "さいげつひとをまたず",
+        "romaji": "Saigetsu Hito o Matazu",
+        "literal": "Time and tide wait for no man",
+        "meaning": {
+            "id": "Waktu tidak akan pernah menunggu manusia. Jangan menunda kesempatan.",
+            "en": "Time and tide wait for no man."
+        },
+        "tags": [
+            "time",
+            "life",
+            "repentance"
+        ],
+        "tags_id": [
+            "waktu",
+            "kehidupan",
+            "penyesalan"
+        ],
+        "jlpt": "N3",
+        "equivalent": {
+            "id": "Waktu adalah uang (meski beda nuansa).",
+            "en": "Time simulates no man."
+        },
+        "examples": [
+            {
+                "ja": "歳月人を待たずといわれる。目標があるなら、一日も早く行動すべきだ。",
+                "romaji": "Saigetsu hito o matazu to iwareru. Mokuhyou ga aru nara, ichinichi mo hayaku koudou subeki da.",
+                "id": "Ada pepatah \"waktu tidak menunggu manusia\". Jika kamu punya tujuan, sudah seharusnya kamu bertindak secepat mungkin."
+            }
+        ],
+        "related": [
+            "kouin-ya-no-gotoshi"
+        ]
+    },
+    {
+        "id": "nokorimono-ni-wa-fuku-ga-aru",
+        "japanese": "残り物には福がある",
+        "reading": "のこりものにはふくがある",
+        "romaji": "Nokorimono ni wa Fuku ga aru",
+        "literal": "There is luck in leftovers",
+        "meaning": {
+            "id": "Ada keberuntungan pada barang sisa. Sabar dan tidak serakah membawa berkah.",
+            "en": "The best is saved for last. There is luck in dregs."
+        },
+        "tags": [
+            "luck",
+            "patience",
+            "life"
+        ],
+        "tags_id": [
+            "keberuntungan",
+            "kesabaran",
+            "kehidupan"
+        ],
+        "jlpt": "N4",
+        "equivalent": {
+            "id": "Rezeki anak soleh (kadang).",
+            "en": "TBD"
+        },
+        "examples": [
+            {
+                "ja": "皆が避けていた仕事を引き受けたら、すごい成果が出た。残り物には福があるだね。",
+                "romaji": "Minna ga sakete ita shigoto o hikiuketara, sugoi seika ga deta. Nokorimono ni wa fuku ga aru da ne.",
+                "id": "Saat aku mengambil tugas yang dihindari semua orang, ternyata hasilnya luar biasa. Benar-benar ada berkah di sisa-sisa."
+            }
+        ],
+        "related": [
+            "fuku-wa-muyoku-ni-yadoru"
+        ]
+    },
+    {
+        "id": "kappa-no-kawanagare",
+        "japanese": "河童の川流れ",
+        "reading": "かっぱのかわながれ",
+        "romaji": "Kappa no Kawanagare",
+        "literal": "A kappa getting carried away by the river",
+        "meaning": {
+            "id": "Kappa pun bisa hanyut. Ahli pun bisa melakukan kesalahan.",
+            "en": "Even Homer sometimes nods. Anyone can make a mistake."
+        },
+        "tags": [
+            "mistake",
+            "expert",
+            "animals"
+        ],
+        "tags_id": [
+            "kesalahan",
+            "ahli",
+            "hewan"
+        ],
+        "jlpt": "N3",
+        "equivalent": {
+            "id": "Sepandai-pandai tupai melompat, akhirnya jatuh juga. Tiada gading yang tak retak.",
+            "en": "Even monkeys fall from trees."
+        },
+        "examples": [
+            {
+                "ja": "あの天才ピアニストがミスタッチをするなんて、河童の川流れだね。",
+                "romaji": "Ano tensai pianisuto ga misutatchi o suru nante, kappa no kawanagare da ne.",
+                "id": "Pianis jenius itu salah tekan tuts, benar-benar seperti Kappa yang hanyut di sungai."
+            }
+        ],
+        "related": [
+            "saru-mo-ki-kara-ochiru",
+            "koubou-mo-fude-no-ayamari"
+        ]
+    },
+    {
+        "id": "nakitsura-ni-hachi",
+        "japanese": "泣きっ面に蜂",
+        "reading": "なきっつらにはち",
+        "romaji": "Nakitsura ni Hachi",
+        "literal": "Stung by a bee on a crying face",
+        "meaning": {
+            "id": "Sudah jatuh tertimpa tangga. Kesialan bertubi-tubi.",
+            "en": "Misfortunes never come singly. Adding insult to injury."
+        },
+        "tags": [
+            "misfortune",
+            "bad luck"
+        ],
+        "tags_id": [
+            "kesialan",
+            "nasib buruk"
+        ],
+        "jlpt": "N3",
+        "equivalent": {
+            "id": "Sudah jatuh tertimpa tangga.",
+            "en": "It never rains but it pours."
+        },
+        "examples": [
+            {
+                "ja": "財布を落としたうえに、雨に降られた。まさに泣きっ面に蜂だ。",
+                "romaji": "Saifu o otoshita ue ni, ame ni furareta. Masani nakitsura ni hachi da.",
+                "id": "Sudah dompet hilang, kehujanan pula. Benar-benar sudah jatuh tertimpa tangga."
+            }
+        ],
+        "related": [
+            "yowarime-ni-tatarime"
+        ]
+    },
+    {
+        "id": "kiyomizu-no-butai-kara-tobioriru",
+        "japanese": "清水の舞台から飛び降りる",
+        "reading": "きよみずのぶたいからとびおりる",
+        "romaji": "Kiyomizu no Butai Kara Tobioriru",
+        "literal": "Jumping off the stage of Kiyomizu",
+        "meaning": {
+            "id": "Mengambil keputusan besar dengan tekad bulat.",
+            "en": "To take the plunge. Crossing the Rubicon."
+        },
+        "tags": [
+            "decision",
+            "courage",
+            "determination"
+        ],
+        "tags_id": [
+            "keputusan",
+            "keberanian",
+            "tekad"
+        ],
+        "jlpt": "N2",
+        "equivalent": {
+            "id": "Bulatkan tekad.",
+            "en": "To take a leap of faith."
+        },
+        "examples": [
+            {
+                "ja": "清水の舞台から飛び降りるつもりで、マンションを買った。",
+                "romaji": "Kiyomizu no butai kara tobioriru tsumori de, manshon o katta.",
+                "id": "Dengan tekad bulat saya membeli apartemen."
+            }
+        ],
+        "related": [
+            "isse-ichidai"
+        ]
+    },
+    {
+        "id": "wataru-seken-ni-oni-wa-nai",
+        "japanese": "渡る世間に鬼はない",
+        "reading": "わたるせけんにおにはない",
+        "romaji": "Wataru Seken ni Oni wa Nai",
+        "literal": "There are no demons in the world we walk through",
+        "meaning": {
+            "id": "Dunia ini tidak sejahat yang dikira. Masih banyak orang baik.",
+            "en": "There is kindness to be found everywhere."
+        },
+        "tags": [
+            "kindness",
+            "society",
+            "people"
+        ],
+        "tags_id": [
+            "kebaikan",
+            "masyarakat",
+            "orang"
+        ],
+        "jlpt": "N2",
+        "equivalent": {
+            "id": "Habis gelap terbitlah terang (agak beda tapi nuansa positif).",
+            "en": "It's a small world."
+        },
+        "examples": [
+            {
+                "ja": "困っていたら、知らない人が助けてくれた。渡る世間に鬼はないね。",
+                "romaji": "Komatte itara, shiranai hito ga tasukete kureta. Wataru seken ni oni wa nai ne.",
+                "id": "Saat aku kesulitan, ada orang asing yang menolongku. Ternyata dunia ini masih penuh orang baik."
+            }
+        ],
+        "related": [
+            "suteru-kami-areba-hirou-kami-ari"
+        ]
+    },
+    {
+        "id": "hi-no-nai-tokoro-ni-kemuri-wa-tatanu",
+        "japanese": "火のない所に煙は立たぬ",
+        "reading": "ひのないところにけむりはたたぬ",
+        "romaji": "Hi no Nai Tokoro ni Kemuri wa Tatanu",
+        "literal": "Smoke does not rise where there is no fire",
+        "meaning": {
+            "id": "Di tempat yang tidak ada apinya, asap tidak akan muncul. Setiap rumor pasti ada dasarnya.",
+            "en": "There is no smoke without fire. Rumors usually have some basis in fact."
+        },
+        "tags": [
+            "rumor",
+            "truth",
+            "cause and effect"
+        ],
+        "tags_id": [
+            "rumor",
+            "kebenaran",
+            "sebab akibat"
+        ],
+        "jlpt": "N3",
+        "equivalent": {
+            "id": "Ada asap ada api.",
+            "en": "There is no smoke without fire."
+        },
+        "examples": [
+            {
+                "ja": "彼の浮気の噂が流れているけど、火のない所に煙は立たぬと言うから、何かあったのかもしれない。",
+                "romaji": "Kare no uwaki no uwasa ga nagarete iru kedo, hi no nai tokoro ni kemuri wa tatanu to iu kara, nanika atta no kamoshirenai.",
+                "id": "Ada rumor kalau dia selingkuh. Karena pepatah bilang ada asap ada api, mungkin memang ada sesuatu yang terjadi."
+            }
+        ],
+        "related": [
+            "tane-makanu-mono-wa-karitoranu"
+        ]
+    },
+    {
+        "id": "toudai-moto-kurashi",
+        "japanese": "灯台下暗し",
+        "reading": "とうだいもとくらし",
+        "romaji": "Toudai Moto Kurashi",
+        "literal": "It is darkest under the lighthouse",
+        "meaning": {
+            "id": "Tempat paling gelap ada di bawah lampu. Seringkali kita tidak menyadari hal-hal yang berada sangat dekat dengan kita.",
+            "en": "It is darkest under the lamp. We are often unaware of what is right in front of us."
+        },
+        "tags": [
+            "life",
+            "awareness",
+            "irony"
+        ],
+        "tags_id": [
+            "kehidupan",
+            "kesadaran",
+            "ironi"
+        ],
+        "jlpt": "N3",
+        "equivalent": {
+            "id": "Gajah di pelupuk mata tak tampak, semut di seberang lautan tampak.",
+            "en": "The darkest place is under the candle."
+        },
+        "examples": [
+            {
+                "ja": "眼鏡を探していたら、頭の上にあった。灯台下暗しだね。",
+                "romaji": "Megane o sagashite itara, atama no ue ni atta. Toudai moto kurashi da ne.",
+                "id": "Lagi capek-capek cari kacamata, ternyata ada di atas kepala. Benar-benar \"di bawah lampu malah gelap\"."
+            }
+        ],
+        "related": [
+            "ashimoto-o-miru"
+        ]
+    },
+    {
+        "id": "yakeishi-ni-mizu",
+        "japanese": "焼け石に水",
+        "reading": "やけいしにみず",
+        "romaji": "Yakeishi ni Mizu",
+        "literal": "Water on a hot stone",
+        "meaning": {
+            "id": "Meneteskan air ke batu yang terbakar. Bantuan atau usaha yang terlalu sedikit sehingga tidak memberikan dampak apa pun.",
+            "en": "A drop in the bucket. Asking for the moon."
+        },
+        "tags": [
+            "futility",
+            "effort",
+            "situation"
+        ],
+        "tags_id": [
+            "kesia-siaan",
+            "usaha",
+            "situasi"
+        ],
+        "jlpt": "N2",
+        "equivalent": {
+            "id": "Garam di laut.",
+            "en": "A drop in the ocean."
+        },
+        "examples": [
+            {
+                "ja": "こんなに借金があるのに、1万円だけ返しても焼け石に水だ。",
+                "romaji": "Konna ni shakkin ga aru noni, ichiman-en dake kaeshite mo yakeishi ni mizu da.",
+                "id": "Utangnya segunung ini, kalau cuma bayar 10.000 yen itu percuma seperti air di batu panas."
+            }
+        ],
+        "related": [
+            "nikai-kara-megusuri",
+            "nuka-ni-kugi"
+        ]
+    },
+    {
+        "id": "inu-to-saru",
+        "japanese": "犬と猿",
+        "reading": "いぬとさる",
+        "romaji": "Inu to Saru",
+        "literal": "Dog and Monkey",
+        "meaning": {
+            "id": "Hubungan yang sangat buruk dan tidak bisa akur. Musuh bebuyutan.",
+            "en": "Like cats and dogs. Bitter enemies."
+        },
+        "tags": [
+            "relationship",
+            "conflict",
+            "animals"
+        ],
+        "tags_id": [
+            "hubungan",
+            "konflik",
+            "hewan"
+        ],
+        "jlpt": "N3",
+        "equivalent": {
+            "id": "Seperti anjing dan kucing.",
+            "en": "Fighting like cats and dogs."
+        },
+        "examples": [
+            {
+                "ja": "あの兄弟は、小さい頃から犬と猿のように仲が悪い。",
+                "romaji": "Ano kyoudai wa, chiisai koro kara inu to saru no you ni naka ga warui.",
+                "id": "Kakak beradik itu hubungan mereka sangat buruk bagai anjing dan monyet sejak kecil."
+            }
+        ],
+        "related": [
+            "mizu-to-abura"
+        ]
+    },
+    {
+        "id": "inu-mo-arukeba-bou-ni-ataru",
+        "japanese": "犬も歩けば棒に当たる",
+        "reading": "いぬもあるけばぼうにあたる",
+        "romaji": "Inu mo Arukeba Bou ni Ataru",
+        "literal": "Even a dog walking hits a stick",
+        "meaning": {
+            "id": "Jika mencoba, pasti ada hasilnya (baik keberuntungan maupun kesialan).",
+            "en": "Every dog has his day. Unexpected things happen when you take action."
+        },
+        "tags": [
+            "action",
+            "luck",
+            "fate"
+        ],
+        "tags_id": [
+            "tindakan",
+            "keberuntungan",
+            "nasib"
+        ],
+        "jlpt": "N4",
+        "equivalent": {
+            "id": "Malu bertanya sesat di jalan (konteks aksi).",
+            "en": "A moving blade of grass has some purpose."
+        },
+        "examples": [
+            {
+                "ja": "散歩していたら、ずっと探していた本を古本屋で見つけた。犬も歩けば棒に当たるだね。",
+                "romaji": "Sanpo shite itara, zutto sagashite ita hon o furuhonya de mitsuketa. Inu mo arukeba bou ni ataru da ne.",
+                "id": "Saat jalan-jalan, aku menemukan buku yang kucari selama ini. Benar-benar keberuntungan bisa datang kapan saja asal kita bergerak."
+            }
+        ],
+        "related": [
+            "tana-kara-botamochi"
+        ]
+    },
+    {
+        "id": "neko-no-te-mo-karitai",
+        "japanese": "猫の手も借りたい",
+        "reading": "ねこのてもかりたい",
+        "romaji": "Neko no Te mo Karitai",
+        "literal": "Want to borrow even a cat's paw",
+        "meaning": {
+            "id": "Sangat sibuk sampai-sampai bantuan sekecil apapun (bahkan dari kucing) sangat diinginkan.",
+            "en": "Extremely busy. So busy I could use any help."
+        },
+        "tags": [
+            "busy",
+            "work",
+            "animals"
+        ],
+        "tags_id": [
+            "sibuk",
+            "pekerjaan",
+            "hewan"
+        ],
+        "jlpt": "N3",
+        "equivalent": {
+            "id": "Sibuk setengah mati.",
+            "en": "Swamped with work."
+        },
+        "examples": [
+            {
+                "ja": "年末は掃除や買い物で猫の手も借りたいほど忙しい。",
+                "romaji": "Nenmatsu wa souji ya kaimono de neko no te mo karitai hodo isogashii.",
+                "id": "Akhir tahun sibuk sekali dengan bersih-bersih dan belanja, sampai ingin meminjam tangan kucing sekalipun."
+            }
+        ],
+        "related": [
+            "bouchuu-kan-ari"
+        ]
+    },
+    {
+        "id": "neko-o-kaburu",
+        "japanese": "猫を被る",
+        "reading": "ねこをかぶる",
+        "romaji": "Neko o Kaburu",
+        "literal": "To put on a cat / wear a cat",
+        "meaning": {
+            "id": "Berpura-pura polos, jinak, atau lemah lembut padahal sebenarnya tidak.",
+            "en": "To feign innocence. A wolf in sheep's clothing."
+        },
+        "tags": [
+            "personality",
+            "deception",
+            "animals"
+        ],
+        "tags_id": [
+            "kepribadian",
+            "pura-pura",
+            "hewan"
+        ],
+        "jlpt": "N3",
+        "equivalent": {
+            "id": "Serigala berbulu domba (mirip).",
+            "en": "Playing innocent."
+        },
+        "examples": [
+            {
+                "ja": "あの子は先生の前では猫を被っているけど、本当はやんちゃだよ。",
+                "romaji": "Ano ko wa sensei no mae de wa neko o kabutte iru kedo, hontou wa yancha da yo.",
+                "id": "Anak itu berpura-pura polos di depan guru, tapi sebenarnya nakal lho."
+            }
+        ],
+        "related": [
+            "hitsuji-no-kawa-o-kabutta-ookami"
+        ]
+    },
+    {
+        "id": "yamai-wa-ki-kara",
+        "japanese": "病は気から",
+        "reading": "やまいはきから",
+        "romaji": "Yamai wa Ki kara",
+        "literal": "Illness comes from the spirit (Qi)",
+        "meaning": {
+            "id": "Penyakit berawal dari pikiran. Kesehatan fisik sangat dipengaruhi oleh kondisi mental.",
+            "en": "Illness starts from the mind. Care kills the cat."
+        },
+        "tags": [
+            "health",
+            "mind",
+            "psychology"
+        ],
+        "tags_id": [
+            "kesehatan",
+            "pikiran",
+            "psikologi"
+        ],
+        "jlpt": "N3",
+        "equivalent": {
+            "id": "Hati yang gembira adalah obat.",
+            "en": "Mind over matter."
+        },
+        "examples": [
+            {
+                "ja": "そんなに落ち込んでいたら、本当に具合が悪くなるよ。病は気からだよ。",
+                "romaji": "Sonna ni ochikonde itara, hontou ni guai ga waruku naru yo. Yamai wa ki kara da yo.",
+                "id": "Kalau kau murung terus begitu, nanti kau benar-benar sakit lho. Ingat, penyakit itu datang dari pikiran."
+            }
+        ],
+        "related": [
+            "warau-kado-ni-wa-fuku-kitaru"
+        ]
+    },
+    {
+        "id": "hyakubun-wa-ikken-ni-shikazu",
+        "japanese": "百聞は一見に如かず",
+        "reading": "ひゃくぶんはいっけんにしかず",
+        "romaji": "Hyakubun wa Ikken ni Shikazu",
+        "literal": "A hundred hearings are not equal to one seeing",
+        "meaning": {
+            "id": "Mendengar seratus kali tidak sebanding dengan melihat satu kali. Melihat sendiri lebih meyakinkan.",
+            "en": "Seeing is believing. One look is worth a thousand words."
+        },
+        "tags": [
+            "experience",
+            "truth",
+            "learning"
+        ],
+        "tags_id": [
+            "pengalaman",
+            "kebenaran",
+            "belajar"
+        ],
+        "jlpt": "N3",
+        "equivalent": {
+            "id": "Melihat adalah percaya.",
+            "en": "Seeing is believing."
+        },
+        "examples": [
+            {
+                "ja": "その景色の美しさは、言葉では説明できない。百聞は一見に如かずだ。",
+                "romaji": "Sono keshiki no utsukushisa wa, kotoba de wa setsumei dekinai. Hyakubun wa ikken ni shikazu da.",
+                "id": "Keindahan pemandangan itu tak terlukiskan kata-kata. Sekali melihat lebih berarti dari seribu penjelasan."
+            }
+        ],
+        "related": [
+            "ron-yori-shouko"
+        ]
+    },
+    {
+        "id": "me-kara-hana-ni-nukeru",
+        "japanese": "目から鼻に抜ける",
+        "reading": "めからはなにぬける",
+        "romaji": "Me kara Hana ni Nukeru",
+        "literal": "To pass from eye to nose",
+        "meaning": {
+            "id": "Sangat cerdas, berpikir cepat, dan tanggap.",
+            "en": "Very intelligent. Sharp as a tack."
+        },
+        "tags": [
+            "intelligence",
+            "talent",
+            "praise"
+        ],
+        "tags_id": [
+            "kecerdasan",
+            "bakat",
+            "pujian"
+        ],
+        "jlpt": "N1",
+        "equivalent": {
+            "id": "Otak encer.",
+            "en": "Quick-witted."
+        },
+        "examples": [
+            {
+                "ja": "彼は目から鼻に抜けるような秀才だ。",
+                "romaji": "Kare wa me kara hana ni nukeru you na shuusai da.",
+                "id": "Dia adalah seorang jenius yang sangat cerdas dan tanggap."
+            }
+        ],
+        "related": [
+            "ichi-o-kiite-juu-o-shiru"
+        ]
+    },
+    {
+        "id": "mekuso-hanakuso-o-warau",
+        "japanese": "目くそ鼻くそを笑う",
+        "reading": "めくそはなくそをわらう",
+        "romaji": "Mekuso Hanakuso o Warau",
+        "literal": "Eye wax laughing at nose booger",
+        "meaning": {
+            "id": "Kotoran mata menertawakan kotoran hidung. Seseorang yang memiliki kekurangan menertawakan orang lain yang memiliki kekurangan serupa.",
+            "en": "The pot calling the kettle black."
+        },
+        "tags": [
+            "hypocrisy",
+            "criticism",
+            "self-awareness"
+        ],
+        "tags_id": [
+            "kemunafikan",
+            "kritik",
+            "kesadaran diri"
+        ],
+        "jlpt": "N1",
+        "equivalent": {
+            "id": "Gajah di pelupuk mata tak tampak, semut di seberang lautan tampak.",
+            "en": "The pot calling the kettle black."
+        },
+        "examples": [
+            {
+                "ja": "彼らは相手のミスを責めているが、どっちもどっちだ。目くそ鼻くそを笑うだよ。",
+                "romaji": "Karera wa aite no misu o semete iru ga, dotchi mo dotchi da. Mekuso hanakuso o warau da yo.",
+                "id": "Mereka saling menyalahkan kesalahan lawan, tapi sebenarnya sama saja. Dasar belek menertawakan upil."
+            }
+        ],
+        "related": [
+            "gojuppo-hyakupo",
+            "donguri-no-se-kurabe"
+        ]
+    },
+    {
+        "id": "me-ni-wa-me-o-ha-ni-wa-ha-o",
+        "japanese": "目には目を歯には歯を",
+        "reading": "めにはめをはにははを",
+        "romaji": "Me ni wa Me o, Ha ni wa Ha o",
+        "literal": "Eye for an eye, tooth for a tooth",
+        "meaning": {
+            "id": "Mata dibalas dengan mata, gigi dibalas dengan gigi. Pembalasan yang setimpal.",
+            "en": "An eye for an eye, a tooth for a tooth."
+        },
+        "tags": [
+            "justice",
+            "revenge",
+            "law"
+        ],
+        "tags_id": [
+            "keadilan",
+            "balas dendam",
+            "hukum"
+        ],
+        "jlpt": "N3",
+        "equivalent": {
+            "id": "Hutang nyawa dibayar nyawa.",
+            "en": "Tit for tat."
+        },
+        "examples": [
+            {
+                "ja": "やられたらやり返す。目には目を歯には歯をだ。",
+                "romaji": "Yararetara yarikaesu. Me ni wa me o ha ni wa ha o da.",
+                "id": "Kalau diserang, aku akan menyerang balik. Mata ganti mata, gigi ganti gigi."
+            }
+        ],
+        "related": [
+            "urareta-kenka-wa-kau"
+        ]
+    },
+    {
+        "id": "shiranu-ga-hotoke",
+        "japanese": "知らぬが仏",
+        "reading": "しらぬがほとけ",
+        "romaji": "Shiranu ga Hotoke",
+        "literal": "Not knowing is Buddha",
+        "meaning": {
+            "id": "Ketidaktahuan membawa kedamaian hati. Kadang lebih baik tidak mengetahui kebenaran yang menyakitkan.",
+            "en": "Ignorance is bliss."
+        },
+        "tags": [
+            "ignorance",
+            "peace",
+            "life"
+        ],
+        "tags_id": [
+            "ketidaktahuan",
+            "kedamaian",
+            "kehidupan"
+        ],
+        "jlpt": "N1",
+        "equivalent": {
+            "id": "Tidak tahu menahu.",
+            "en": "What you don't know won't hurt you."
+        },
+        "examples": [
+            {
+                "ja": "彼の悪口をみんなが言っているのに、本人だけがニコニコしている。まさに知らぬが仏だ。",
+                "romaji": "Kare no waruguchi o minna ga itte iru noni, honnin dake ga nikoniko shite iru. Masani shiranu ga hotoke da.",
+                "id": "Semua orang menjelek-jelekkannya, tapi dia malah tersenyum. Benar-benar tenang karena tidak tahu."
+            }
+        ],
+        "related": [
+            "kiku-wa-ittoki-no-haji"
+        ]
+    },
+    {
+        "id": "ishibashi-o-tataite-wataru",
+        "japanese": "石橋を叩いて渡る",
+        "reading": "いしばしをたたいてわたる",
+        "romaji": "Ishibashi o Tataite Wataru",
+        "literal": "Cross a stone bridge after tapping it",
+        "meaning": {
+            "id": "Sangat berhati-hati. Memastikan keamanan bahkan pada hal yang sudah terlihat aman sebelum bertindak.",
+            "en": "Look before you leap. Being excessively cautious."
+        },
+        "tags": [
+            "caution",
+            "safety",
+            "personality"
+        ],
+        "tags_id": [
+            "kehati-hatian",
+            "keamanan",
+            "kepribadian"
+        ],
+        "jlpt": "N2",
+        "equivalent": {
+            "id": "Sedia payung sebelum hujan.",
+            "en": "Better safe than sorry."
+        },
+        "examples": [
+            {
+                "ja": "彼は石橋を叩いて渡るタイプだから、ミスは絶対にしない。",
+                "romaji": "Kare wa ishibashi o tataite wataru taipu da kara, misu wa zettai ni shinai.",
+                "id": "Dia tipe orang yang sangat berhati-hati, jadi tidak mungkin berbuat kesalahan."
+            }
+        ],
+        "related": [
+            "korobanu-saki-no-tsue"
+        ]
+    },
+    {
+        "id": "warau-kado-ni-wa-fuku-kitaru",
+        "japanese": "笑う門には福来たる",
+        "reading": "わらうかどにはふくきたる",
+        "romaji": "Warau Kado ni wa Fuku Kitaru",
+        "literal": "Fortune comes to the laughing gate",
+        "meaning": {
+            "id": "Keberuntungan datang ke rumah yang penuh tawa. Sikap positif dan ceria mengundang kebahagiaan.",
+            "en": "Fortune comes in by a merry gate. Laugh and the world laughs with you."
+        },
+        "tags": [
+            "happiness",
+            "luck",
+            "family"
+        ],
+        "tags_id": [
+            "kebahagiaan",
+            "keberuntungan",
+            "keluarga"
+        ],
+        "jlpt": "N3",
+        "equivalent": {
+            "id": "Hati yang gembira adalah obat.",
+            "en": "Good luck comes to those who smile."
+        },
+        "examples": [
+            {
+                "ja": "辛い時こそ笑顔でいよう。笑う門には福来たるだよ。",
+                "romaji": "Tsurai toki koso egao de iyou. Warau kado ni wa fuku kitaru da yo.",
+                "id": "Justru saat sulit kita harus tersenyum. Keberuntungan datang pada mereka yang tersenyum."
+            }
+        ],
+        "related": [
+            "yamai-wa-ki-kara"
+        ]
+    },
+    {
+        "id": "keizoku-wa-chikara-nari",
+        "japanese": "継続は力なり",
+        "reading": "けいぞくはちからなり",
+        "romaji": "Keizoku wa Chikara Nari",
+        "literal": "Continuity is power",
+        "meaning": {
+            "id": "Keberlanjutan adalah kekuatan. Konsistensi dalam melakukan sesuatu akan membuahkan hasil besar.",
+            "en": "Continuity is power. Persistence pays off."
+        },
+        "tags": [
+            "persistence",
+            "effort",
+            "motivation"
+        ],
+        "tags_id": [
+            "ketekunan",
+            "usaha",
+            "motivasi"
+        ],
+        "jlpt": "N4",
+        "equivalent": {
+            "id": "Sedikit demi sedikit, lama-lama menjadi bukit.",
+            "en": "Slow and steady wins the race."
+        },
+        "examples": [
+            {
+                "ja": "毎日読書をすることで、知識が増えてきた。継続は力なりというのを実感している。",
+                "romaji": "Mainichi dokusho o suru koto de, chishiki ga fuete kita. Keizoku wa chikara nari to iu no o jikkan shite iru.",
+                "id": "Dengan membaca setiap hari, pengetahuanku bertambah. Aku merasakan bahwa konsistensi adalah kekuatan."
+            }
+        ],
+        "related": [
+            "chiri-mo-tsumoreba-yama-to-naru",
+            "ishi-no-ue-ni-mo-sannen"
+        ]
+    },
+    {
+        "id": "ami-donshu-no-uo-o-morasu",
+        "japanese": "網呑舟の魚を漏らす",
+        "reading": "あみどんしゅうのうおをもらす",
+        "romaji": "Ami Donshu no Uo o Morasu",
+        "literal": "The net lets the fish that can swallow a boat escape",
+        "meaning": {
+            "id": "Jaring yang meloloskan ikan raksasa. Sindiran untuk hukum yang tajam ke bawah tapi tumpul ke atas (penjahat besar lolos).",
+            "en": "Laws catch flies but let hornets go."
+        },
+        "tags": [
+            "law",
+            "injustice",
+            "society"
+        ],
+        "tags_id": [
+            "hukum",
+            "ketidakadilan",
+            "masyarakat"
+        ],
+        "jlpt": "N1",
+        "equivalent": {
+            "id": "Hukum tajam ke bawah, tumpul ke atas.",
+            "en": "Catch the minnows and let the whales go."
+        },
+        "examples": [
+            {
+                "ja": "政治家は無罪になり、秘書だけが逮捕された。これでは網呑舟の魚を漏らすだ。",
+                "romaji": "Seijika wa muzai ni nari, hisho dake ga taiho sareta. Kore de wa ami donshu no uo o morasu da.",
+                "id": "Politisi bebas, sekretarisnya ditangkap. Benar-benar seperti jaring yang meloloskan ikan paus."
+            }
+        ],
+        "related": [
+            "tenmou-kaikai-so-ni-shite-morasazu"
+        ]
+    },
+    {
+        "id": "kiku-wa-ittoki-no-haji",
+        "japanese": "聞くは一時の恥",
+        "reading": "きくはいっときのはじ",
+        "romaji": "Kiku wa Ittoki no Haji",
+        "literal": "Asking is a moment's shame",
+        "meaning": {
+            "id": "Bertanya malu sesaat. Tidak bertanya (dan tetap bodoh) malu seumur hidup.",
+            "en": "Asking makes one appear foolish for a moment, but not asking makes one foolish forever."
+        },
+        "tags": [
+            "learning",
+            "humility",
+            "wisdom"
+        ],
+        "tags_id": [
+            "belajar",
+            "kerendahan hati",
+            "kebijaksanaan"
+        ],
+        "jlpt": "N4",
+        "equivalent": {
+            "id": "Malu bertanya sesat di jalan.",
+            "en": "Better to ask the way than go astray."
+        },
+        "examples": [
+            {
+                "ja": "わからないことがあれば、先生にどんどん質問しなさい。聞くは一時の恥だよ。",
+                "romaji": "Wakaranai koto ga areba, sensei ni dondon shitsumon shinasai. Kiku wa ittoki no haji da yo.",
+                "id": "Jika tidak mengerti, tanyalah pada guru. Malu bertanya itu cuma sesaat kok."
+            }
+        ],
+        "related": [
+            "shiranu-ga-hotoke"
+        ]
+    },
+    {
+        "id": "yasumonogai-no-zeni-ushinai",
+        "japanese": "安物買いの銭失い",
+        "reading": "やすものがいのぜにうしない",
+        "romaji": "Yasumonogai no Zeni Ushinai",
+        "literal": "Buying cheap, losing money",
+        "meaning": {
+            "id": "Membeli barang murah justru bikin rugi karena cepat rusak.",
+            "en": "Penny wise, pound foolish. You get what you pay for."
+        },
+        "tags": [
+            "money",
+            "quality",
+            "regret"
+        ],
+        "tags_id": [
+            "uang",
+            "kualitas",
+            "penyesalan"
+        ],
+        "jlpt": "N3",
+        "equivalent": {
+            "id": "Ada harga ada rupa.",
+            "en": "Penny wise, pound foolish."
+        },
+        "examples": [
+            {
+                "ja": "安いパソコンを買ったが、すぐに壊れて修理代が高くついた。まさに安物買いの銭失いだ。",
+                "romaji": "Yasui pasokon o katta ga, sugu ni kowarete shuuridai ga takaku tsuita. Masani yasumonogai no zeniushinai da.",
+                "id": "Saya membeli laptop murah, tapi langsung rusak dan biaya servisnya mahal. Benar-benar 'beli barang murah malah rugi uang'."
+            }
+        ],
+        "related": [
+            "yasukarou-warukarou"
+        ]
+    },
+    {
+        "id": "kaeru-no-ko-wa-kaeru",
+        "japanese": "蛙の子は蛙",
+        "reading": "かえるのこはかえる",
+        "romaji": "Kaeru no Ko wa Kaeru",
+        "literal": "A frog's child is a frog",
+        "meaning": {
+            "id": "Anak katak tetap katak. Anak mewarisi sifat/kemampuan orang tuanya. Buah jatuh tak jauh dari pohonnya.",
+            "en": "Like father, like son. The apple doesn't fall far from the tree."
+        },
+        "tags": [
+            "family",
+            "heredity",
+            "similarity"
+        ],
+        "tags_id": [
+            "keluarga",
+            "keturunan",
+            "kemiripan"
+        ],
+        "jlpt": "N3",
+        "equivalent": {
+            "id": "Buah jatuh tak jauh dari pohonnya.",
+            "en": "The apple doesn't fall far from the tree."
+        },
+        "examples": [
+            {
+                "ja": "息子も私に似て野球が好きだ。蛙の子は蛙だね。",
+                "romaji": "Musuko mo watashi ni nite yakyuu ga suki da. Kaeru no ko wa kaeru da ne.",
+                "id": "Anakku juga suka bisbol mirip aku. Memang buah jatuh tidak jauh dari pohonnya."
+            }
+        ],
+        "related": [
+            "tonbi-ga-taka-o-umu"
+        ]
     }
 ]

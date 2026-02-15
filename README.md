@@ -4,13 +4,23 @@
 [![NPM Version](https://img.shields.io/npm/v/kotowaza.svg)](https://www.npmjs.com/package/kotowaza)
 [![NPM Downloads](https://img.shields.io/npm/dm/kotowaza.svg)](https://www.npmjs.com/package/kotowaza)
 
-A structured, production-grade dataset of **Japanese proverbs (ことわざ / Kotowaza)** with bilingual meanings, example sentences, JLPT levels, and thematic tags.
+**Kotowaza** is a structured, production-grade dataset of **Japanese proverbs (ことわざ)** with bilingual meanings, JLPT levels, example sentences, thematic tags, and cross-language equivalents.
+
+It is designed for developers, educators, linguists, and language apps that need a clean, searchable **Japanese proverb database API or JSON dataset**.
 
 > ⚡️ **Live Demo:** This dataset powers the **[Kamus Peribahasa Jepang](https://jepang.org/peribahasa/)** on **[Jepang.org](https://jepang.org)** — Indonesia's comprehensive Japanese learning platform. See it running in production!
 
 - **Repository:** [github.com/sepTN/kotowaza](https://github.com/sepTN/kotowaza)
 - **Documentation:** [septn.github.io/kotowaza](https://septn.github.io/kotowaza/)
 - **Website:** [Jepang.org — Belajar Bahasa Jepang](https://jepang.org)
+
+Most proverb datasets are:
+- incomplete
+- monolingual
+- unstructured
+- hard to search programmatically
+
+**Kotowaza fixes that** with a normalized schema, multilingual meanings, and production-ready helper functions so you can plug proverb wisdom into apps instantly.
 
 ## Features
 
